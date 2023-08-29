@@ -1,0 +1,25 @@
+@import "default/_fonts";
+
+@import "../../../node_modules/normalize.css/normalize";
+
+@import "default/_reset";
+@import "../../../node_modules/swiper/swiper-bundle";
+@import "../external-modules/popup/popup-style";
+
+@import "default/_vars";
+@import "default/_global";
+
+
+
+
+@import "main-modules/-header";
+
+@import "pages/index-style";
+
+
+@import "main-modules/-footer";
+
+
+@import "default/_media";
+@import "default/_animations";
+

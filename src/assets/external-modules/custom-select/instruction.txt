@@ -1,0 +1,24 @@
+HTML - Разметка
+
+  <div class="custom-select">
+    <button type="button" class="custom-select__button"></button>
+    <ul class="custom-select__options">
+      <li class="custom-select__option" data-value="first" active>Первый итем</li>
+      <li class="custom-select__option" data-value="second">Второй итем</li>
+      <li class="custom-select__option" data-value="third">Третий итем</li>
+      <li class="custom-select__option" data-value="fourth">Четвертый итем</li>
+    </ul>
+    <input type="text" class="custom-select__input">
+  </div>
+
+КЛАССЫ
+  _active - добавляется как кнопке, так и списку, что позволяет его скрывать и применять разные эффекты
+  _focus - добавляется кнопке. Необходим для стилизации эффекта фокуса
+
+
+АТТРИБУТЫ
+
+  data-value="" - значение, которое вставляется в инпут
+  active - указывает активный элемент списка. Если не стоит, автоматически вставляется первй элемент
+
+

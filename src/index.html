@@ -1,0 +1,18 @@
+@@include('../src/assets/html/main-modules/head.html', {
+"title": "Главная",
+"styleHref": "css/style.css",
+})
+
+<body>
+  @@include('../src/assets/html/main-modules/header.html', {})
+  <main class="main">
+
+  </main>
+  @@include('../src/assets/html/main-modules/footer.html', {})
+
+  @@include('assets/html/main-modules/script-connection.html', {
+    scriptHref: 'js/main.js'
+  })
+</body>
+
+</html>

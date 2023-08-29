@@ -1,0 +1,39 @@
+.section {
+  padding: 100px;
+}
+
+.js-num-input {
+  display: grid;
+  grid-template-columns: repeat(3, 50px);
+  grid-template-rows: 50px;
+}
+
+.js-num-input-area {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  text-align: center;
+}
+
+.js-num-input-btn-up {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  border: 1px solid #ccc;
+}
+
+.js-num-input-btn-up:hover{
+  background-color: aqua;
+}
+
+.js-num-input-btn-down {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  cursor: pointer;
+  background-color: rgb(233, 233, 233);
+  border: 1px solid #ccc;
+}
+
+.js-num-input-btn-down:hover{
+  background-color: aqua;
+}

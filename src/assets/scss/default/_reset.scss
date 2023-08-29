@@ -1,0 +1,76 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+a,
+button {
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+label,
+input {
+  cursor: pointer;
+}
+
+dd {
+  margin: 0;
+}
+
+fieldset{
+  padding: 0;
+  margin: 0;
+  border: none;
+}
+
+svg{
+  display: block;
+}
+
+//reset icon input date 
+input[type="date"]::-webkit-calendar-picker-indicator{
+  opacity: 0;
+}
+
+//reset arrow input number
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+

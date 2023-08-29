@@ -1,0 +1,21 @@
+.js-spoller {
+}
+.js-spoller-btn {
+}
+.js-spoller-area {
+  overflow: hidden;
+  transition: height .3s;
+  height: 0;
+}
+
+.js-spoller-area._active{
+}
+
+.js-spoller-area._active .js-spoller-area-inner{
+  transform: translateY(0);
+}
+
+.js-spoller-area-inner {
+  transform: translateY(-100%);
+  transition: transform .3s;
+}
