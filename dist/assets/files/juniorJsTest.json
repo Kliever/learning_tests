@@ -1,0 +1,48 @@
+{
+  "Test": [
+    {
+      "question" : "Какой метод используется для преобразования строки в число с плавающей точкой?",
+      "explanation": "Функция parseInt() принимает строку в качестве аргумента и возвращает целое число в соответствии с указанным основанием системы счисления.",
+      "answers": [
+        {
+          "answer": "toInt()",
+          "status": "false"
+        },
+        {
+          "answer": "parseFloat()",
+          "status": "false"
+        },
+        {
+          "answer": "toFloat()",
+          "status": "false"
+        },
+        {
+          "answer": "parseInt()",
+          "status": "true"
+        }
+      ]
+    },
+    {
+      "question" : "Question number 2",
+      "explanation": "explanation 2",
+      "answers": [
+        {
+          "answer": "Answer 2-1",
+          "status": "false"
+        },
+        {
+          "answer": "Answer 2-2",
+          "status": "false"
+        },
+        {
+          "answer": "Answer 2-3",
+          "status": "true"
+        },
+        {
+          "answer": "Answer 2-4",
+          "status": "false"
+        }
+      ]
+    }
+  ]
+}

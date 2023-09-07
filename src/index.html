@@ -1,12 +1,37 @@
 @@include('../src/assets/html/main-modules/head.html', {
-"title": "Главная",
+"title": "Тестирование",
 "styleHref": "css/style.css",
 })
 
 <body>
   @@include('../src/assets/html/main-modules/header.html', {})
   <main class="main">
+    <div class="container">
+      <div class="main__inner">
+        <div class="main__block main-block">
+          
+          <div class="test-block">
+            <h2 class="test-block__question question">
+              
+            </h2>
+          </div>
+          <div class="test-block__answers">
+            <div class="test-block__answer test-answer">
 
+            </div>
+            <div class="test-block__results">
+              <div class="test-block__results-title">
+
+              </div>
+              <div class="test-block__results-descr">
+
+              </div>
+            </div>
+            <button type="button" class="test-block__next-btn next-btn">Следующий вопрос</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </main>
   @@include('../src/assets/html/main-modules/footer.html', {})
 
