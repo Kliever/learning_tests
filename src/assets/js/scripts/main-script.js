@@ -20,22 +20,22 @@ function startTest() {
   testOutputResult = '';
   //
   console.log(juniorJsTestFile["Test"][0]["answers"][0]["answer"]);
-  //add question in html
-  let questionNumber = calcRandomQuestionPosition(juniorJsTestFile);
+  //Определение и вывод вопроса в HTML
+  let questionNumber = calcRandomNumber(juniorJsTestFile["Test"].length);
   questionArea.innerHTML = `${juniorJsTestFile["Test"][questionNumber]["question"]}`;
-  //add answers in html
+  //Вывод ответов в HTML
   for (let i = 0; i < juniorJsTestFile["Test"][questionNumber]["answers"].length; i++) {
 
     testOutputResult += fillingAnswerArea(juniorJsTestFile, questionNumber, i);
-    
+
   }
   testAnswerArea.innerHTML = testOutputResult;
   checkValidResultTest(juniorJsTestFile, questionNumber);
 }
 
-function calcRandomQuestionPosition(questionFile) {
-  let questionNumber = Math.floor(Math.random() * questionFile["Test"].length);
-  return questionNumber;
+function calcRandomNumber(maxNumber) {
+  let randomNumber = Math.floor(Math.random() * maxNumber);
+  return randomNumber;
 }
 
 function fillingAnswerArea(questionFile, questionNumber, responseNumber) {
@@ -72,6 +72,7 @@ function checkValidResultTest(questionFile, questionNumber) {
 testBlockNextBtn.addEventListener('click', () => {
   startTest();
 })
+
 
 
 
