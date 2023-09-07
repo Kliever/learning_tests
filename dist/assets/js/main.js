@@ -19,6 +19,7 @@ isWebp();
 const questionArea = document.querySelector('.question');
 const testAnswerArea = document.querySelector('.test-answer');
 const testBlockNextBtn = document.querySelector('.test-block__next-btn');
+testBlockNextBtn.disabled = true;
 const testBlockResultsTitle = document.querySelector('.test-block__results-title');
 const testBlockResultsDescr = document.querySelector('.test-block__results-descr');
 let testOutputResult = '';
@@ -30,24 +31,43 @@ juniorJsTest.open('GET', "./assets/files/juniorJsTest.json");
 juniorJsTest.responseType = 'json';
 juniorJsTest.send();
 
-juniorJsTest.onload = startTest;
+juniorJsTest.onload = () => {
+  startQuiz();
+};
+
 //Функция запуска отдельного теста
-function startTest() {
+function startQuiz () {
   const juniorJsTestFile = juniorJsTest.response;
+
+  let listOfQuestionsNumbers = randomCicle(juniorJsTestFile["Test"].length);
+  outputQuestionsAndAnswers(juniorJsTestFile, listOfQuestionsNumbers);
+  //переход к следующему вопросу по клику кнопки
+  testBlockNextBtn.addEventListener('click', () => {
+    listOfQuestionsNumbers.shift();
+    if (listOfQuestionsNumbers.length > 0) {
+      outputQuestionsAndAnswers(juniorJsTestFile, listOfQuestionsNumbers);
+    } else {
+      testBlockNextBtn.disabled = true;
+    }
+  })
+}
+
+
+function outputQuestionsAndAnswers(quizFile, questionsArrey) {
   testAnswerArea.innerHTML = '';
   testOutputResult = '';
-  //
-  console.log(juniorJsTestFile["Test"][0]["answers"][0]["answer"]);
-  //Определение и вывод вопроса в HTML
-  let questionNumber = calcRandomNumber(juniorJsTestFile["Test"].length);
-  questionArea.innerHTML = `${juniorJsTestFile["Test"][questionNumber]["question"]}`;
+
+  console.log(quizFile["Test"][0]["answers"][0]["answer"]);
+  //Определение и вывод рандомного вопроса в HTML
+  let questionNumber = questionsArrey[0];
+  questionArea.innerHTML = `${quizFile["Test"][questionNumber]["question"]}`;
   //Вывод ответов в HTML
-  let listOfQuestionNumbers = randomCicle(juniorJsTestFile["Test"][questionNumber]["answers"].length) //перемешивание вопросов в рандомном порядке
-  for (let i = 0; i < juniorJsTestFile["Test"][questionNumber]["answers"].length; i++) {
-    testOutputResult += fillingAnswerArea(juniorJsTestFile, questionNumber, listOfQuestionNumbers[i]);
+  let listOfAnswersNumbers = randomCicle(quizFile["Test"][questionNumber]["answers"].length) //перемешивание ответов в рандомном порядке
+  for (let i = 0; i < quizFile["Test"][questionNumber]["answers"].length; i++) {
+    testOutputResult += fillingAnswerArea(quizFile, questionNumber, listOfAnswersNumbers[i]);
   }
   testAnswerArea.innerHTML = testOutputResult;
-  checkValidResultTest(juniorJsTestFile, questionNumber);
+  checkValidResultTest(quizFile, questionNumber);
 }
 //функция генерации рандомного числа
 function calcRandomNumber(maxNumber) {
@@ -95,6 +115,3 @@ function randomCicle (maxNumber) {
   return randomNumberArr;
 }
 //Нажатие на кнопку "Далее"
-testBlockNextBtn.addEventListener('click', () => {
-  startTest();
-})
