@@ -31,7 +31,7 @@ juniorJsTest.responseType = 'json';
 juniorJsTest.send();
 
 juniorJsTest.onload = startTest;
-
+//Функция запуска отдельного теста
 function startTest() {
   const juniorJsTestFile = juniorJsTest.response;
   testAnswerArea.innerHTML = '';
@@ -42,24 +42,23 @@ function startTest() {
   let questionNumber = calcRandomNumber(juniorJsTestFile["Test"].length);
   questionArea.innerHTML = `${juniorJsTestFile["Test"][questionNumber]["question"]}`;
   //Вывод ответов в HTML
+  let listOfQuestionNumbers = randomCicle(juniorJsTestFile["Test"][questionNumber]["answers"].length) //перемешивание вопросов в рандомном порядке
   for (let i = 0; i < juniorJsTestFile["Test"][questionNumber]["answers"].length; i++) {
-
-    testOutputResult += fillingAnswerArea(juniorJsTestFile, questionNumber, i);
-
+    testOutputResult += fillingAnswerArea(juniorJsTestFile, questionNumber, listOfQuestionNumbers[i]);
   }
   testAnswerArea.innerHTML = testOutputResult;
   checkValidResultTest(juniorJsTestFile, questionNumber);
 }
-
+//функция генерации рандомного числа
 function calcRandomNumber(maxNumber) {
   let randomNumber = Math.floor(Math.random() * maxNumber);
   return randomNumber;
 }
-
+//Функция генерации кода для одного ответа
 function fillingAnswerArea(questionFile, questionNumber, responseNumber) {
   return `<label class="test-answer__checkbox checkbox"><input class="test-answer__check checkbox__check" type="radio" name="answer" data-status="${questionFile["Test"][questionNumber]["answers"][responseNumber]['status']}"><span class="checkbox__box"></span><span class="checkbox__info">${questionFile["Test"][questionNumber]["answers"][responseNumber]['answer']}</span></label>`;
 }
-
+//функция проверки ответа на правильность с последующим выводом результата
 function checkValidResultTest(questionFile, questionNumber) {
   let radios = document.querySelectorAll('.test-answer__check');
   radios.forEach((radio) => {
@@ -86,7 +85,16 @@ function checkValidResultTest(questionFile, questionNumber) {
   })
 
 }
-
+//Функция цикла с рандомным проходом
+function randomCicle (maxNumber) {
+  let numberArr = [];
+  for (let i = 0; i < maxNumber; i++) {
+    numberArr.push(i);
+  }
+  let randomNumberArr = numberArr.sort(() => Math.random() - 0.5); 
+  return randomNumberArr;
+}
+//Нажатие на кнопку "Далее"
 testBlockNextBtn.addEventListener('click', () => {
   startTest();
 })
