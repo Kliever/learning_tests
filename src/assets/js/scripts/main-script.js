@@ -4,6 +4,9 @@ const testBlockNextBtn = document.querySelector('.test-block__next-btn');
 testBlockNextBtn.disabled = true;
 const testBlockResultsTitle = document.querySelector('.test-block__results-title');
 const testBlockResultsDescr = document.querySelector('.test-block__results-descr');
+const testBlockResultsLink = document.querySelector('.test-block__results-link');
+const answeredQuestionsBlock = document.querySelector('.test-block__info-questions-answered');
+const totalQuestionsBlock = document.querySelector('.test-block__info-questions-total');
 let testOutputResult = '';
 
 
@@ -20,21 +23,34 @@ juniorJsTest.onload = () => {
 //Функция запуска отдельного теста
 function startQuiz () {
   const juniorJsTestFile = juniorJsTest.response;
-
+  //Выводим текущий вопрос от общего количества
+  let currentQuestion = 1;
+  answeredQuestionsBlock.innerHTML = currentQuestion;
+  //Добавляет на страницу общее количество вопросов 
+  totalQuestionsBlock.innerHTML = `${juniorJsTestFile["Test"].length}`
+  //Вывод вопросов и вариантов ответа на страницу
   let listOfQuestionsNumbers = randomCicle(juniorJsTestFile["Test"].length);
   outputQuestionsAndAnswers(juniorJsTestFile, listOfQuestionsNumbers);
   //переход к следующему вопросу по клику кнопки
   testBlockNextBtn.addEventListener('click', () => {
+    testBlockNextBtn.disabled = true;
     listOfQuestionsNumbers.shift();
     if (listOfQuestionsNumbers.length > 0) {
       outputQuestionsAndAnswers(juniorJsTestFile, listOfQuestionsNumbers);
+      //Обновление счетчика
+      currentQuestion += 1;
+      answeredQuestionsBlock.innerHTML = currentQuestion;
+      //Обнуление описания ответа и пояснения к нему в виде ссылки
+      testBlockResultsTitle.innerText = '';
+      testBlockResultsDescr.innerText = '';
+      testBlockResultsLink.innerHTML = '';
     } else {
       testBlockNextBtn.disabled = true;
     }
   })
 }
 
-
+//Функция вывода вопросов и варинатов ответа на страницу
 function outputQuestionsAndAnswers(quizFile, questionsArrey) {
   testAnswerArea.innerHTML = '';
   testOutputResult = '';
@@ -49,7 +65,7 @@ function outputQuestionsAndAnswers(quizFile, questionsArrey) {
     testOutputResult += fillingAnswerArea(quizFile, questionNumber, listOfAnswersNumbers[i]);
   }
   testAnswerArea.innerHTML = testOutputResult;
-  checkValidResultTest(quizFile, questionNumber);
+  checkValidResultTest(quizFile, questionNumber, questionsArrey);
 }
 //функция генерации рандомного числа
 function calcRandomNumber(maxNumber) {
@@ -61,11 +77,11 @@ function fillingAnswerArea(questionFile, questionNumber, responseNumber) {
   return `<label class="test-answer__checkbox checkbox"><input class="test-answer__check checkbox__check" type="radio" name="answer" data-status="${questionFile["Test"][questionNumber]["answers"][responseNumber]['status']}"><span class="checkbox__box"></span><span class="checkbox__info">${questionFile["Test"][questionNumber]["answers"][responseNumber]['answer']}</span></label>`;
 }
 //функция проверки ответа на правильность с последующим выводом результата
-function checkValidResultTest(questionFile, questionNumber) {
+function checkValidResultTest(questionFile, questionNumber, questionsArrey) {
   let radios = document.querySelectorAll('.test-answer__check');
   radios.forEach((radio) => {
     radio.addEventListener('click', function () {
-      //Преврка ответа на правильность
+      //Преверка ответа на правильность
       for (let i = 0; i < radios.length; i++) {
         if (radios[i].getAttribute('data-status') === 'true') {
           radios[i].parentElement.classList.add('_win');
@@ -75,14 +91,25 @@ function checkValidResultTest(questionFile, questionNumber) {
           radios[i].disabled = true;
         }
       }
+      //Включение кнопки далее при ответе на вопрос, не включение при ответе на последний вопрос
+      if (questionsArrey.length > 1) {
+        testBlockNextBtn.disabled = false;
+        console.log(questionsArrey.length);
+      } else {
+        testBlockNextBtn.disabled = true;
+      }
+
       //Результат проверки отевта на правильность с его выводом
       if (this.getAttribute('data-status') === 'true') {
         testBlockResultsTitle.innerText = "Правильный ответ";
       } else {
         testBlockResultsTitle.innerText = "Неправильный ответ";
       }
-      //Публикуем пояснение к ответу
+      //Публикация описания ответа
       testBlockResultsDescr.innerText = questionFile["Test"][questionNumber]["explanation"];
+      //Публикация ссылки к ответу
+      testBlockResultsLink.innerHTML = `<a href="${questionFile["Test"][questionNumber]["links"]}" target="_blank">Читать подробнее</a>`;
+      
     })
   })
 
