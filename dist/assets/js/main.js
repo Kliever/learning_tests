@@ -25,8 +25,13 @@ const testBlockResultsDescr = document.querySelector('.test-block__results-descr
 const testBlockResultsLink = document.querySelector('.test-block__results-link');
 const answeredQuestionsBlock = document.querySelector('.test-block__info-questions-answered');
 const totalQuestionsBlock = document.querySelector('.test-block__info-questions-total');
+const correctAnswerBlock = document.querySelector('.test-block__info-correct-answer-count');
+const incorrectAnswerBlock = document.querySelector('.test-block__info-incorrect-answer-count');
 let testOutputResult = '';
-
+let counterOfCorrectAnswers = 0; // счетчик правильных ответов
+correctAnswerBlock.innerText = counterOfCorrectAnswers;
+let wrongAnswerCounter = 0; // счетчик неправильных ответов
+incorrectAnswerBlock.innerText = wrongAnswerCounter;
 
 
 const juniorJsTest = new XMLHttpRequest();
@@ -99,7 +104,15 @@ function checkValidResultTest(questionFile, questionNumber, questionsArrey) {
   let radios = document.querySelectorAll('.test-answer__check');
   radios.forEach((radio) => {
     radio.addEventListener('click', function () {
-      //Преверка ответа на правильность
+      // Подсчет правильных и неправильных ответов
+      if (this.getAttribute('data-status') === 'true') {
+        counterOfCorrectAnswers += 1;
+        correctAnswerBlock.innerText = counterOfCorrectAnswers;
+      } else {
+        wrongAnswerCounter += 1;
+        incorrectAnswerBlock.innerText = wrongAnswerCounter;
+      }
+      //Преверка ответа на правильность c добавлением соответствующего класса
       for (let i = 0; i < radios.length; i++) {
         if (radios[i].getAttribute('data-status') === 'true') {
           radios[i].parentElement.classList.add('_win');
@@ -112,7 +125,6 @@ function checkValidResultTest(questionFile, questionNumber, questionsArrey) {
       //Включение кнопки далее при ответе на вопрос, не включение при ответе на последний вопрос
       if (questionsArrey.length > 1) {
         testBlockNextBtn.disabled = false;
-        console.log(questionsArrey.length);
       } else {
         testBlockNextBtn.disabled = true;
       }
@@ -141,4 +153,3 @@ function randomCicle (maxNumber) {
   let randomNumberArr = numberArr.sort(() => Math.random() - 0.5); 
   return randomNumberArr;
 }
-//Нажатие на кнопку "Далее"
