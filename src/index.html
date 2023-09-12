@@ -10,44 +10,65 @@
       <div class="main__inner">
         <div class="main__block main-block">
 
-          <div class="test-block">
-            <div class="test-block__inner">
-              <h2 class="test-block__question question">
+          <div class="start-block">
+            <h2 class="start-block__title questions">Выберите один из типов доступных заданий</h2>
+            <div class="start-block__btns js-radio-type">
+              <button type="button" class="start-block__btn switch-btn js-radio-type__btn _active" data-type="quiz">Тестирование</button>
+              <button type="button" class="start-block__btn switch-btn js-radio-type__btn" data-type="questions">Вопросы</button>
+            </div>
+            <h2 class="start-block__title questions">Выберите один или несколько разделов</h2>
+            <div class="start-block__btns js-switch-btns">
+              <button type="button" class="start-block__btn switch-btn js-switch-btn">Junior JS</button>
+              <button type="button" class="start-block__btn switch-btn js-switch-btn">Middle JS</button>
+              <button type="button" class="start-block__btn switch-btn js-switch-btn">Senior JS</button>
+            </div>
+          </div>
+
+          <div class="quiz-block">
+            <div class="quiz-block__inner">
+              <h2 class="quiz-block__question question">
 
               </h2>
-              <div class="test-block__answers">
-                <div class="test-block__answer test-answer">
+              <div class="quiz-block__body">
+                <div class="quiz-block__answers">
+                  <div class="quiz-block__answer quiz-answer">
 
+                  </div>
+                  <div class="quiz-block__results">
+                    <div class="quiz-block__results-title">
+
+                    </div>
+                  </div>
+                  <div class="quiz-block__next-btns">
+                    <button type="button" class="quiz-block__next-btn btn">Следующий вопрос</button>
+                    <button type="button" class="quiz-block__reload-btn btn">Пройти тест заново</button>
+                  </div>
                 </div>
-                <div class="test-block__results">
-                  <div class="test-block__results-title">
-
+                <div class="quiz-block__info">
+                  <div class="quiz-block__info-questions">
+                    Вопрос
+                    <span class="quiz-block__info-questions-answered"></span>
+                    из
+                    <span class="quiz-block__info-questions-total"></span>
                   </div>
-                  <div class="test-block__results-descr">
-
+                  <div class="quiz-block__info-correct-answer">
+                    Правильных ответов:
+                    <span class="quiz-block__info-correct-answer-count"></span>
                   </div>
-                  <div class="test-block__results-link">
-
+                  <div class="quiz-block__info-incorrect-answer">
+                    Неправильных ответов:
+                    <span class="quiz-block__info-incorrect-answer-count"></span>
                   </div>
                 </div>
-                <button type="button" class="test-block__next-btn next-btn">Следующий вопрос</button>
+              </div>
+              <div class="quiz-block__results-descr">
+
+              </div>
+              <div class="quiz-block__results-link">
+
               </div>
             </div>
-            <div class="test-block__info">
-              <div class="test-block__info-questions">
-                <span class="test-block__info-questions-answered"></span>
-                /
-                <span class="test-block__info-questions-total"></span>
-              </div>
-              <div class="test-block__info-correct-answer">
-                Правильных ответов:
-                <span class="test-block__info-correct-answer-count"></span>
-              </div>
-              <div class="test-block__info-incorrect-answer">
-                Неправильных ответов:
-                <span class="test-block__info-incorrect-answer-count"></span>
-              </div>
-            </div>
+
           </div>
 
         </div>

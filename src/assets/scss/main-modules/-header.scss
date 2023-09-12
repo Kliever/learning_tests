@@ -1,10 +1,10 @@
 .header{
   
 }
-.header__inner {
+.header__top {
   position: relative;
   padding: 20px 0;
-
+  margin-bottom: 20px;
   &::after {
     content: '';
     position: absolute;
@@ -19,4 +19,13 @@
 .header__descr{
   text-align: center;
   font-size: 30px;
+}
+
+.start-block__btns{
+  display: flex;
+  column-gap: 10px;
+}
+
+.header__quiz-btn {
+ 
 }

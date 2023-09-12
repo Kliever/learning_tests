@@ -1,47 +1,3 @@
-// ПРоверка поддержки webpackStream, добавление класса webp или no-webp для HTML 
-function isWebp() {
-  // Проверка поддержки WebP 
-  function testWebP(callback) {
-    let webP = new Image();
-    webP.onload = webP.onerror = function () {
-      callback(webP.height == 2);
-    };
-    webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA"
-  }
-  //Добавление класса _webp или _no-webp для HTML
-  testWebP(function (support) {
-    let className = support === true ? 'webp' : 'no-webp';
-    document.documentElement.classList.add(className);
-  });
-}
-
-isWebp();
-//radio-type==================================================
-const radioBlocks = document.querySelectorAll('.js-radio-type');
-radioBlocks.forEach((radioBlock) => {
-  const radioBlockBtns = radioBlock.querySelectorAll('.js-radio-type__btn');
-  radioBlockBtns.forEach((radioBlockBtn) => {
-    radioBlockBtn.addEventListener('click', () => {
-      for (let i = 0; i < radioBlockBtns.length; i++) {
-        radioBlockBtns[i].classList.remove('_active')
-      }
-      radioBlockBtn.classList.add('_active');
-    })
-  })
-})
-
-// switch-btn
-const switchBtns = document.querySelectorAll('.js-switch-btn');
-
-switchBtns.forEach((switchBtn) => {
-  switchBtn.addEventListener('click', function () {
-    if (this.classList.contains('_active')) {
-      this.classList.remove('_active');
-    } else {
-      this.classList.add('_active');
-    }
-  })
-})
 const questionArea = document.querySelector('.question');
 const testAnswerArea = document.querySelector('.quiz-answer');
 const testBlockNextBtn = document.querySelector('.quiz-block__next-btn');
@@ -194,3 +150,18 @@ function randomCicle (maxNumber) {
   let randomNumberArr = numberArr.sort(() => Math.random() - 0.5); 
   return randomNumberArr;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

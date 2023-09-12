@@ -26,6 +26,11 @@ body {
   color: #4b4b4b;
 }
 
+.question {
+  font-size: 34px;
+  line-height: 1.2;
+}
+
 // checkbox-------------------
 .checkbox {
   display: block;
@@ -34,11 +39,20 @@ body {
     .checkbox__info {
       color: green;
     }
+
+    .checkbox__check:checked+.checkbox__box+.checkbox__info {
+      color: #00ff22;
+      background: #000;
+    }
   }
 
   &._lose {
     .checkbox__info {
       color: red;
+    }
+
+    .checkbox__check:checked+.checkbox__box+.checkbox__info {
+      background: #000;
     }
   }
 }
@@ -85,8 +99,34 @@ body {
   }
 }
 
-.checkbox__info {}
+.checkbox__info {
+  display: inline-block;
+  padding: 0 10px;
+  border-radius: 5px;
+  background: transparent;
+}
 
-.next-btn {
-  padding: 10px;
+.btn {
+  padding: 10px 20px;
+  border: 1px solid var(--grey);
+  border-radius: 25px;
+  background: #fff;
+}
+
+.switch-btn {
+  padding: 2px 10px;
+  border: 1px solid #4b4b4b;
+  background: #fff;
+  border-radius: 5px;
+
+  @media (min-width: 1024px) {
+    &:hover {
+      background: #4b4b4b;
+      color: #fff;
+    }
+  }
+  &._active{
+    background: #4b4b4b;
+    color: #fff;
+  }
 }
