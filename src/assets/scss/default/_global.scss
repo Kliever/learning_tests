@@ -111,6 +111,15 @@ body {
   border: 1px solid var(--grey);
   border-radius: 25px;
   background: #fff;
+
+  @media (min-width: 1024px) {
+    &:hover {
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+    }
+    &:disabled:hover{
+      box-shadow: none;
+    }
+  }
 }
 
 .switch-btn {
@@ -121,11 +130,11 @@ body {
 
   @media (min-width: 1024px) {
     &:hover {
-      background: #4b4b4b;
-      color: #fff;
+      box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
     }
   }
-  &._active{
+
+  &._active {
     background: #4b4b4b;
     color: #fff;
   }

@@ -10,18 +10,19 @@
       <div class="main__inner">
         <div class="main__block main-block">
 
-          <div class="start-block">
+          <div class="start-block _active">
             <h2 class="start-block__title questions">Выберите один из типов доступных заданий</h2>
-            <div class="start-block__btns js-radio-type">
-              <button type="button" class="start-block__btn switch-btn js-radio-type__btn _active" data-type="quiz">Тестирование</button>
-              <button type="button" class="start-block__btn switch-btn js-radio-type__btn" data-type="questions">Вопросы</button>
+            <div class="start-block__btns js-radio-type js-types-of-tasks">
+              <button type="button" class="start-block__btn switch-btn js-radio-type__btn js-types-of-tasks__item _active" data-type="quiz">Тестирование</button>
+              <button type="button" class="start-block__btn switch-btn js-radio-type__btn js-types-of-tasks__item" data-type="questions">Вопросы</button>
             </div>
             <h2 class="start-block__title questions">Выберите один или несколько разделов</h2>
-            <div class="start-block__btns js-switch-btns">
-              <button type="button" class="start-block__btn switch-btn js-switch-btn">Junior JS</button>
-              <button type="button" class="start-block__btn switch-btn js-switch-btn">Middle JS</button>
-              <button type="button" class="start-block__btn switch-btn js-switch-btn">Senior JS</button>
+            <div class="start-block__btns js-switch-btns js-types-of-questions">
+              <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item" data-type="juniorJs">Junior JS</button>
+              <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item" data-type="middleJs">Middle JS</button>
+              <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item" data-type="seniorJs">Senior JS</button>
             </div>
+            <button type="button" class="start-block__start-btn">Начать</button>
           </div>
 
           <div class="quiz-block">

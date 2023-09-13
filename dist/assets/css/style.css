@@ -1403,6 +1403,14 @@ body {
   border-radius: 25px;
   background: #fff;
 }
+@media (min-width: 1024px) {
+  .btn:hover {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  }
+  .btn:disabled:hover {
+    box-shadow: none;
+  }
+}
 
 .switch-btn {
   padding: 2px 10px;
@@ -1412,8 +1420,7 @@ body {
 }
 @media (min-width: 1024px) {
   .switch-btn:hover {
-    background: #4b4b4b;
-    color: #fff;
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
   }
 }
 .switch-btn._active {
@@ -1446,12 +1453,41 @@ body {
   column-gap: 10px;
 }
 
+.start-block {
+  display: none;
+}
+.start-block._active {
+  display: block;
+}
+
 .start-block__title {
   margin-bottom: 20px;
 }
 
 .start-block__btns {
   margin-bottom: 20px;
+}
+
+.start-block__start-btn {
+  height: 50px;
+  width: 400px;
+  margin: 0 auto;
+  border-radius: 30px;
+  border: 1px solid #4b4b4b;
+  transition: box-shadow;
+  margin-top: 70px;
+}
+@media (min-width: 1024px) {
+  .start-block__start-btn:hover {
+    box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
+  }
+}
+
+.quiz-block {
+  display: none;
+}
+.quiz-block._active {
+  display: block;
 }
 
 .quiz-block__body {
