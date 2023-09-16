@@ -342,8 +342,6 @@ function randomCicle(maxNumber) {
 questionsNextBtn.disabled = true;
 questionsReloadBtn.disabled = true;
 
-//Начать опрос заново
-
 questionsReloadBtn.addEventListener('click', () => {
   startQuestions(taskArrey);
   //Обнуление описания ответа и пояснения к нему в виде ссылки
@@ -355,34 +353,40 @@ questionsReloadBtn.addEventListener('click', () => {
 
 function startQuestions(questionsFiles) {
   //Выводим текущий вопрос от общего количества
-  let currentQuestion = 1;
+  currentQuestion = 1;
   answeredQuestionsBlock.innerHTML = currentQuestion;
   //Добавляет на страницу общее количество вопросов 
   totalQuestionsBlock.innerHTML = `${questionsFiles.length}`;
   //Вывод вопросов на страницу
-  let listOfQuestionsNumbers = randomCicle(questionsFiles.length);
+  listOfQuestionsNumbers = randomCicle(questionsFiles.length); //перемешивание вопросов в рандомном порядке
   outputQuestions(questionsFiles, listOfQuestionsNumbers)
-  //Переход к следующему вопросу по клику кнопки
-  questionsNextBtn.addEventListener('click', () => {
-    questionsNextBtn.disabled = true;
-    listOfQuestionsNumbers.shift();
-    if (listOfQuestionsNumbers.length > 0) {
-      outputQuestions(questionsFiles, listOfQuestionsNumbers);
-      //Обновление счетчика
-      currentQuestion += 1;
-      answeredQuestionsBlock.innerHTML = currentQuestion;
-      //Обнуление описания ответа и пояснения к нему в виде ссылки
-      questionsResultDescr.innerText = '';
-      questionsResultLink.innerHTML = '';
-      //Обновление состояния кнопки
-      resultQuestionsBtn.disabled = false;
-    }
-  })
   //Показь ответ на вопрос по клику кнопки
   resultQuestionsBtn.addEventListener('click', () => {
     outputAnswers(questionsFiles, listOfQuestionsNumbers);
   })
 }
+
+
+//Переход к следующему вопросу по клику кнопки
+questionsNextBtn.addEventListener('click', () => {
+  questionsNextBtn.disabled = true;
+  listOfQuestionsNumbers.shift();
+  if (listOfQuestionsNumbers.length > 0) {
+    outputQuestions(taskArrey, listOfQuestionsNumbers);
+    //Обновление счетчика
+    currentQuestion += 1;
+    answeredQuestionsBlock.innerHTML = currentQuestion;
+    //Обнуление описания ответа и пояснения к нему в виде ссылки
+    questionsResultDescr.innerText = '';
+    questionsResultLink.innerHTML = '';
+    //Обновление состояния кнопки
+    resultQuestionsBtn.disabled = false;
+  }
+})
+
+
+
+
 //Функция определения и вывода рандомного вопроса в HTML
 function outputQuestions(questionsFile, questionsArrey) {
   let questionNumber = questionsArrey[0];
