@@ -5,6 +5,32 @@ body {
   font-family: 'Roboto';
 }
 
+.wrapper{
+  min-height: 100vh;
+  position: relative;
+}
+
+.loading{
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #adadad;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+  &._visible{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
 .container {
   max-width: 1024px;
   width: 100%;
@@ -14,6 +40,12 @@ body {
 
 .main {
   margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+  &._visible{
+    opacity: 1;
+    visibility: visible;
+  }
 }
 
 .main-title {
@@ -33,7 +65,7 @@ body {
 
 // checkbox-------------------
 .checkbox {
-  display: block;
+  display: flex;
 
   &._win {
     .checkbox__info {

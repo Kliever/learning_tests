@@ -1,16 +1,8 @@
-const startBlock = document.querySelector('.start-block');
-const startBtn = document.querySelector('.start-block__start-btn');
-const typesOfTasks = document.querySelector('.js-types-of-tasks');
-const typesOfTasksBtns = typesOfTasks.querySelectorAll('.js-types-of-tasks__item');
-const quizBlock = document.querySelector('.quiz-block');
-
-const questionsSections = document.querySelector('.js-types-of-questions');
-const questionsSectionsBtns = questionsSections.querySelectorAll('.js-types-of-questions__item')
-
 let quiz = false;
+let questions = false;
 let typesOfQuestions = []; //собирает атрибуты нажатых кнопок разделов (под вопросом)
 
-let quizFiles = []; //массив файлов json, которые будут учавствовать в тестировании
+let questionsFiles = []; //массив файлов json, которые будут учавствовать в тестировании
 let taskArrey; //Массив вопросов
 //Кнопка запуска заданий
 startBtn.addEventListener('click', () => {
@@ -19,26 +11,47 @@ startBtn.addEventListener('click', () => {
   if (quiz) {
     typesOfQuestions.forEach((typesOfQuestion) => {
       if (typesOfQuestion === 'juniorJs') {
-        quizFiles.push(juniorJsQuiz);
-      } else if (typesOfQuestion === 'middleJs') {
-        quizFiles.push(middleJsQuiz);
-      } else if (typesOfQuestion === 'seniorJs') {
-        quizFiles.push(seniorJsQuiz);
+        questionsFiles.push(juniorJsQuiz);
+      } else if (typesOfQuestion === 'HTML') {
+        questionsFiles.push(HTMLQuiz);
+      } else if (typesOfQuestion === 'CSS') {
+        questionsFiles.push(CSSQuiz);
       }
     })
 
-    for (let i = 0; i < quizFiles.length; i++) {
+    for (let i = 0; i < questionsFiles.length; i++) {
       if (i === 0) {
-        taskArrey = quizFiles[i]['Test'];
+        taskArrey = questionsFiles[i]['Test'];
       } else {
-        taskArrey = taskArrey.concat(quizFiles[i]['Test']);
+        taskArrey = taskArrey.concat(questionsFiles[i]['Test']);
       }
     }
     
     correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
     incorrectAnswerBlock.innerText = wrongAnswerCounter = 0;
     startQuiz(taskArrey);
+  } else if (questions) {
+    typesOfQuestions.forEach((typesOfQuestion) => {
+      if (typesOfQuestion === 'juniorJs') {
+        questionsFiles.push(juniorJsQuestions);
+      } else if (typesOfQuestion === 'HTML') {
+        questionsFiles.push(HTMLQuestions);
+      } else if (typesOfQuestion === 'CSS') {
+        questionsFiles.push(CSSQuestions);
+      }
+    })
+
+    for (let i = 0; i < questionsFiles.length; i++) {
+      if (i === 0) {
+        taskArrey = questionsFiles[i]['Questions'];
+      } else {
+        taskArrey = taskArrey.concat(questionsFiles[i]['Questions']);
+      }
+    }
+
+    startQuestions(taskArrey);
   }
+
 })
 //Функция определения, какой тип задания выбран (тестирование или вопросы)
 function selectingTaskType() {
@@ -50,10 +63,13 @@ function selectingTaskType() {
           startBlock.classList.remove('_active');
           quizBlock.classList.add('_active');
           quiz = true;
+          questions = false;
           break;
         case 'questions':
-          // console.log(13);
+          startBlock.classList.remove('_active');
+          questionsBlock.classList.add('_active');
           quiz = false;
+          questions = true;
           break;
       }
     }

@@ -1,70 +1,825 @@
 {
   "Test": [
     {
-      "question" : "Какой метод используется для преобразования строки в число с плавающей точкой?",
-      "explanation": "Функция parseInt() принимает строку в качестве аргумента и возвращает целое число в соответствии с указанным основанием системы счисления.",
-      "link": "https://www.google.com/",
+      "question": "Какое ключевое слово используется для объявления переменных, видимых только внутри блока, в котором они объявлены?",
+      "explanation": "Директива let объявляет переменную с блочной областью видимости с возможностью инициализировать её значением.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
       "answers": [
+        {
+          "answer": "var",
+          "status": "false"
+        },
+        {
+          "answer": "let",
+          "status": "true"
+        },
+        {
+          "answer": "const",
+          "status": "false"
+        },
+        {
+          "answer": "block",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какую область видимости имеет переменная, объявленная с помощью let?",
+      "explanation": "Директива let объявляет переменную с блочной областью видимости с возможностью инициализировать её значением.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
+      "answers": [
+        {
+          "answer": "Глобальная",
+          "status": "false"
+        },
+        {
+          "answer": "Блочная",
+          "status": "true"
+        },
+        {
+          "answer": "Локальная",
+          "status": "false"
+        },
+        {
+          "answer": "Она не имеет области видимости",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Что произойдет, если попытаться переопределить переменную, объявленную с помощью const?",
+      "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
+      "answers": [
+        {
+          "answer": "Переопределение пройдет успешно",
+          "status": "false"
+        },
+        {
+          "answer": "Будет выдана ошибка компиляции",
+          "status": "true"
+        },
+        {
+          "answer": "Переменная станет undefined",
+          "status": "false"
+        },
+        {
+          "answer": "Значение переменной останется неизменной",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какая из следующих переменных может быть объявлена с помощью const?",
+      "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
+      "answers": [
+        {
+          "answer": "Любая переменная",
+          "status": "false"
+        },
+        {
+          "answer": "Только числовая переменная",
+          "status": "false"
+        },
+        {
+          "answer": "Только строковая переменная",
+          "status": "false"
+        },
+        {
+          "answer": "Только переменная, которая не будет изменяться после объявления",
+          "status": "true"
+        }
+      ]
+    },
+    {
+      "question": "Какая из следующих переменных не может быть переопределена после объявления?",
+      "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
+      "answers": [
+        {
+          "answer": "let name = 'John'",
+          "status": "false"
+        },
+        {
+          "answer": "const age = 30",
+          "status": "true"
+        },
+        {
+          "answer": "let count = 5",
+          "status": "false"
+        },
+        {
+          "answer": "const PI = 3.14159",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод массива используется для удаления элементов по индексу?",
+      "explanation": "Метод splice() изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
+      "answers": [
+        {
+          "answer": "delete()",
+          "status": "false"
+        },
+        {
+          "answer": "splice()",
+          "status": "true"
+        },
+        {
+          "answer": "remove()",
+          "status": "false"
+        },
+        {
+          "answer": "cut()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой оператор используется для инкремента значения переменной на 1?",
+      "explanation": "Инкремент (++) - Унарный оператор. Добавляет единицу к своему операнду. Если используется в качестве префикса (++x), то возвращает значение операнда с добавленной к нему единицей; а в случае применения в качестве окончания (x++) возвращает значение операнда перед добавлением к нему единицы.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators#арифметические_операторы",
+      "answers": [
+        {
+          "answer": "++",
+          "status": "true"
+        },
+        {
+          "answer": "+=",
+          "status": "false"
+        },
+        {
+          "answer": "--",
+          "status": "false"
+        },
+        {
+          "answer": "+1",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод массива используется для сортировки элементов?",
+      "explanation": "Метод sort() на месте сортирует элементы массива и возвращает отсортированный массив. Сортировка не обязательно устойчива (англ.). Порядок сортировки по умолчанию соответствует порядку кодовых точек Unicode.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
+      "answers": [
+        {
+          "answer": "sort()",
+          "status": "true"
+        },
+        {
+          "answer": "order()",
+          "status": "false"
+        },
+        {
+          "answer": "arrange()",
+          "status": "false"
+        },
+        {
+          "answer": "group()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод строки используется для преобразования всех символов в верхний регистр?",
+      "explanation": "Метод toUpperCase() возвращает значение строки, на которой он был вызван, преобразованное в верхний регистр.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase",
+      "answers": [
+        {
+          "answer": "toUpperCase()",
+          "status": "true"
+        },
+        {
+          "answer": "toLower()",
+          "status": "false"
+        },
+        {
+          "answer": "convertToUpperCase()",
+          "status": "false"
+        },
+        {
+          "answer": "upperCase()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для округления числа до ближайшего целого значения?",
+      "explanation": "Метод Math.round() возвращает число, округлённое к ближайшему целому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
+      "answers": [
+        {
+          "answer": "round()",
+          "status": "true"
+        },
+        {
+          "answer": "ceil()",
+          "status": "false"
+        },
+        {
+          "answer": "floor()",
+          "status": "false"
+        },
+        {
+          "answer": "truncate()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Что означает ключевое слово this в контексте объекта?",
+      "explanation": "Поведение ключевого слова this в JavaScript несколько отличается по сравнению с остальными языками. Имеются также различия при использовании this в строгом и нестрогом режиме.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this",
+      "answers": [
+        {
+          "answer": "Текущий объект, на котором используется this",
+          "status": "true"
+        },
+        {
+          "answer": "Ссылку на родительский элемент",
+          "status": "false"
+        },
+        {
+          "answer": "Текущий элемент массива",
+          "status": "false"
+        },
+        {
+          "answer": "Глобальный объект window",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для преобразования строки в число с плавающей точкой?",
+      "explanation": "Функция parseFloat() принимает строку в качестве аргумента и возвращает десятичное число (число с плавающей точкой)",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat",
+      "answers": [
+        {
+          "answer": "parseFloat()",
+          "status": "true"
+        },
         {
           "answer": "toInt()",
           "status": "false"
         },
         {
-          "answer": "parseFloat()",
+          "answer": "parseNumber()",
           "status": "false"
         },
         {
-          "answer": "toFloat()",
-          "status": "false"
-        },
-        {
-          "answer": "parseInt()",
-          "status": "true"
-        }
-      ]
-    },
-    {
-      "question" : "Question number 2",
-      "explanation": "explanation 2",
-      "link": "https://www.vk.com/",
-      "answers": [
-        {
-          "answer": "Answer 2-1",
-          "status": "false"
-        },
-        {
-          "answer": "Answer 2-2",
-          "status": "false"
-        },
-        {
-          "answer": "Answer 2-3",
-          "status": "true"
-        },
-        {
-          "answer": "Answer 2-4",
+          "answer": "toDouble()",
           "status": "false"
         }
       ]
     },
     {
-      "question" : "Question number 3",
-      "explanation": "explanation 3",
-      "link": "https://www.facebook.com/",
+      "question": "Какой метод строки используется для поиска подстроки в строке?",
+      "explanation": "Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
       "answers": [
         {
-          "answer": "Answer 3-1",
-          "status": "false"
-        },
-        {
-          "answer": "Answer 3-2",
-          "status": "false"
-        },
-        {
-          "answer": "Answer 3-3",
+          "answer": "indexOf()",
           "status": "true"
         },
         {
-          "answer": "Answer 3-4",
+          "answer": "substring()",
+          "status": "false"
+        },
+        {
+          "answer": "find()",
+          "status": "false"
+        },
+        {
+          "answer": "search()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой объект позволяет выполнять операции с датами и временем?",
+      "explanation": "Создаёт экземпляр объекта Date, представляющего собой момент времени. Объект Дата содержит число миллисекунд прошедших с 1 января 1970 г. UTC",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date",
+      "answers": [
+        {
+          "answer": "Date",
+          "status": "true"
+        },
+        {
+          "answer": "Time",
+          "status": "false"
+        },
+        {
+          "answer": "Clock",
+          "status": "false"
+        },
+        {
+          "answer": "Timer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Что вернет метод indexOf() если элемент не найден в массиве?",
+      "explanation": "Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
+      "answers": [
+        {
+          "answer": "-1",
+          "status": "true"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        },
+        {
+          "answer": "null",
+          "status": "false"
+        },
+        {
+          "answer": "undefined",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой результат вычисления выражения Math.max(2, 7, 5, 10)?",
+      "explanation": "Метод Math.max() возвращает наибольшее из нуля или более чисел.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/max",
+      "answers": [
+        {
+          "answer": "10",
+          "status": "true"
+        },
+        {
+          "answer": "7",
+          "status": "false"
+        },
+        {
+          "answer": "2",
+          "status": "false"
+        },
+        {
+          "answer": "5",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Что делает оператор 'typeof'?",
+      "explanation": "Оператор typeof возвращает строку, указывающую тип операнда.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof",
+      "answers": [
+        {
+          "answer": "Определяет тип данных",
+          "status": "true"
+        },
+        {
+          "answer": "Проверяет наличие переменной",
+          "status": "false"
+        },
+        {
+          "answer": "Изменяет значение переменной",
+          "status": "false"
+        },
+        {
+          "answer": "Удаляет переменную",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Каким образом объявляется функция в JavaScript?",
+      "explanation": "Объявление функции определяет функцию с указанными аргументами. Также вы можете определять функции через конструктор Function или функциональное выражение.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function",
+      "answers": [
+        {
+          "answer": "func myFunction() {}",
+          "status": "false"
+        },
+        {
+          "answer": "function myFunction() {}",
+          "status": "true"
+        },
+        {
+          "answer": "myFunction = function() {}",
+          "status": "false"
+        },
+        {
+          "answer": "function = myFunction() {}",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для добавления нового элемента в конец массива?",
+      "explanation": "Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+      "answers": [
+        {
+          "answer": "push()",
+          "status": "true"
+        },
+        {
+          "answer": "pop()",
+          "status": "false"
+        },
+        {
+          "answer": "shift()",
+          "status": "false"
+        },
+        {
+          "answer": "unshift()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой оператор используется для строгого сравнения по значению и типу?",
+      "explanation": "Строго равно (===) - Возвращает true, если операнды равны и имеют одинаковый тип",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "===",
+          "status": "true"
+        },
+        {
+          "answer": "==",
+          "status": "false"
+        },
+        {
+          "answer": "!==",
+          "status": "false"
+        },
+        {
+          "answer": "!=",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод используется для объявления переменной?",
+      "explanation": "Директива let объявляет переменную с блочной областью видимости с возможностью инициализировать её значением.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
+      "answers": [
+        {
+          "answer": "let variableName",
+          "status": "true"
+        },
+        {
+          "answer": "const variableName",
+          "status": "false"
+        },
+        {
+          "answer": "var variableName",
+          "status": "false"
+        },
+        {
+          "answer": "new variableName",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какие ключевые слова используются в JavaScript для того, чтобы объявить переменную?",
+      "explanation": "",
+      "link": "https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/Variables",
+      "answers": [
+        {
+          "answer": "var, let, const",
+          "status": "true"
+        },
+        {
+          "answer": "byte, short, int, float",
+          "status": "false"
+        },
+        {
+          "answer": "int, short, var",
+          "status": "false"
+        },
+        {
+          "answer": "const, let, int",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Функция это —",
+      "explanation": "В JavaScript функции являются объектами первого класса, то есть: они являются объектами и с ними можно взаимодействовать и передавать их точно так же как любой другой объект",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions",
+      "answers": [
+        {
+          "answer": "Объект",
+          "status": "true"
+        },
+        {
+          "answer": "Отдельный тип данных 'function'",
+          "status": "false"
+        },
+        {
+          "answer": "Один из примитивных типов данных",
+          "status": "false"
+        },
+        {
+          "answer": "Один из способов объявления переменной",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какие типы данных в JS являются примитивами?",
+      "explanation": "Примитив (значение примитивного типа, примитивный тип данных) это данные, которые не являются объектом и не имеют методов. В JavaScript 7 простых типов данных: string, number, boolean, null, undefined, symbol (новое в ECMAScript 2015), bigint.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures",
+      "answers": [
+        {
+          "answer": "String, Boolean, Number",
+          "status": "false"
+        },
+        {
+          "answer": "String, Boolean, Number, Undefined, Null, Symbol, BigInt",
+          "status": "true"
+        },
+        {
+          "answer": "Object, Array, Map, Set, Data",
+          "status": "false"
+        },
+        {
+          "answer": "String, Boolean, Number, Undefined, NaN, Symbol, BigInt",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какого типа данных нет в JS?",
+      "explanation": "JavaScript является слабо типизированным или динамическим языком. Это значит, что вам не нужно определять тип переменной заранее. Тип определится автоматически во время выполнения программы. Также это значит, что вы можете использовать одну переменную для хранения данных различных типов",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures",
+      "answers": [
+        {
+          "answer": "NaN",
+          "status": "true"
+        },
+        {
+          "answer": "Undefined",
+          "status": "false"
+        },
+        {
+          "answer": "Boolean",
+          "status": "false"
+        },
+        {
+          "answer": "Null",
+          "status": "false"
+        },
+        {
+          "answer": "String",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Как объявить пустой массив в JavaScript?",
+      "explanation": "Массивы создаются из квадратных скобок , которые содержат список элементов, разделённых запятыми.",
+      "link": "https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/Arrays",
+      "answers": [
+        {
+          "answer": "let arrey = []",
+          "status": "true"
+        },
+        {
+          "answer": "let arrey = {}",
+          "status": "false"
+        },
+        {
+          "answer": "empryArrey = []",
+          "status": "false"
+        },
+        {
+          "answer": "let arrey = new Arrey()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Как конвертировать итерируемый объект в массив?",
+      "explanation": "Метод Array.from() создаёт новый экземпляр Array из массивоподобного или итерируемого объекта.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/from",
+      "answers": [
+        {
+          "answer": "Arrey.from()",
+          "status": "true"
+        },
+        {
+          "answer": "Arrey.fromObject()",
+          "status": "false"
+        },
+        {
+          "answer": "Arrey.object()",
+          "status": "false"
+        },
+        {
+          "answer": "Arrey.convertFrom()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Как разбить строку на массив по заданному разделителю?",
+      "explanation": "Метод split() разбивает объект String на массив строк путём разделения строки указанной подстрокой.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/split",
+      "answers": [
+        {
+          "answer": "split()",
+          "status": "true"
+        },
+        {
+          "answer": "join()",
+          "status": "false"
+        },
+        {
+          "answer": "toArrey()",
+          "status": "false"
+        },
+        {
+          "answer": "reverse",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Метод JSON.stringify() преобразует...",
+      "explanation": "Метод JSON.stringify() возвращает JavaScript-значение, преобразованное в JSON-строку. Возможна замена значений, если как replacer передана функция, или включение только определённых свойств, если как replacer указан массив.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
+      "answers": [
+        {
+          "answer": "Значение JavaScript в строку JSON",
+          "status": "true"
+        },
+        {
+          "answer": "Строку JSON в другую JSON",
+          "status": "false"
+        },
+        {
+          "answer": "Строку JSON в значение JavaScript",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Стрелочные функции не имеют...",
+      "explanation": "Выражения стрелочных функций имеют более короткий синтаксис по сравнению с функциональными выражениями и лексически привязаны к значению this (но не привязаны к собственному this, arguments, super, или new.target). Выражение стрелочных функций не позволяют задавать имя, поэтому стрелочные функции анонимны, если их ни к чему не присвоить.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
+      "answers": [
+        {
+          "answer": "Собственного this и arguments",
+          "status": "true"
+        },
+        {
+          "answer": "Собственного this",
+          "status": "false"
+        },
+        {
+          "answer": "Собственного объекта arguments",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какие циклы есть в языке JavaScript?",
+      "explanation": "Операторы предназначенные для организации циклов в JavaScript: for, do...while, while",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration",
+      "answers": [
+        {
+          "answer": "for, while, do while",
+          "status": "true"
+        },
+        {
+          "answer": "for, while, do while, forEach",
+          "status": "false"
+        },
+        {
+          "answer": "for, forMap, forEach, while, do while",
+          "status": "false"
+        },
+        {
+          "answer": "for, forMap, forEach, while",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какой метод преобразует значение JavaScript в строку JSON?",
+      "explanation": "Метод JSON.stringify() возвращает JavaScript-значение, преобразованное в JSON-строку.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
+      "answers": [
+        {
+          "answer": "JSON.stringify()",
+          "status": "true"
+        },
+        {
+          "answer": "JSON.parse()",
+          "status": "false"
+        },
+        {
+          "answer": "JSON.string()",
+          "status": "false"
+        },
+        {
+          "answer": "JSON.toString()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Выберите метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени:",
+      "explanation": "Метод setInterval() предложен для Window и Worker интерфейсов. Он циклически вызывает функцию или участок кода с фиксированной паузой между каждым вызовом. Уникальный идентификатор intervalID, возвращаемый методом, позволяет впоследствии удалить запущенный setInterval c помощью clearInterval()",
+      "link": "https://developer.mozilla.org/ru/docs/Web/API/setInterval",
+      "answers": [
+        {
+          "answer": "setInterval()",
+          "status": "true"
+        },
+        {
+          "answer": "setTimeout()",
+          "status": "false"
+        },
+        {
+          "answer": "setTimer()",
+          "status": "false"
+        },
+        {
+          "answer": "callCode()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какая функция добавляет один или больше элементов в конец массива и возвращает новую длину этого же массива?",
+      "explanation": "Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
+      "answers": [
+        {
+          "answer": "push()",
+          "status": "true"
+        },
+        {
+          "answer": "pop()",
+          "status": "false"
+        },
+        {
+          "answer": "map()",
+          "status": "false"
+        },
+        {
+          "answer": "join()",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Сколько параметров можно передать функции?",
+      "explanation": "",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions",
+      "answers": [
+        {
+          "answer": "Любое количество",
+          "status": "true"
+        },
+        {
+          "answer": "Ровно столько, сколько указано в определении функции",
+          "status": "false"
+        },
+        {
+          "answer": "Сколько указано в определении функции или меньше",
+          "status": "false"
+        },
+        {
+          "answer": "Сколько указано в определении функции или больше",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
           "status": "false"
         }
       ]

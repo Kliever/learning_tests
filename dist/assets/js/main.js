@@ -16,6 +16,100 @@ function isWebp() {
 }
 
 isWebp();
+const startBlock = document.querySelector('.start-block');
+const startBtn = document.querySelector('.start-block__start-btn');
+const typesOfTasks = document.querySelector('.js-types-of-tasks');
+const typesOfTasksBtns = typesOfTasks.querySelectorAll('.js-types-of-tasks__item');
+const quizBlock = document.querySelector('.quiz-block');
+
+const questionsSections = document.querySelector('.js-types-of-questions');
+const questionsSectionsBtns = questionsSections.querySelectorAll('.js-types-of-questions__item');
+
+const questionQuizArea = document.querySelector('.quiz-block__question');
+const testAnswerArea = document.querySelector('.quiz-answer');
+const testBlockNextBtn = document.querySelector('.quiz-block__next-btn');
+testBlockNextBtn.disabled = true;
+const testBlockReloadBtn = document.querySelector('.quiz-block__reload-btn');
+testBlockReloadBtn.disabled = true;
+const testBlockResultsTitle = document.querySelector('.quiz-block__results-title');
+const testBlockResultsDescr = document.querySelector('.quiz-block__results-descr');
+const testBlockResultsLink = document.querySelector('.quiz-block__results-link');
+const answeredQuizBlock = document.querySelector('.quiz-block__info-questions-answered');
+const totalQuizBlock = document.querySelector('.quiz-block__info-questions-total');
+const correctAnswerBlock = document.querySelector('.quiz-block__info-correct-answer-count');
+const incorrectAnswerBlock = document.querySelector('.quiz-block__info-incorrect-answer-count');
+const mainBlock = document.querySelector('.main');
+const loadingBlock = document.querySelector('.loading');
+
+//questions block
+const questionsBlock = document.querySelector('.questions-block');
+const answeredQuestionsBlock = document.querySelector('.questions-block__info-questions-answered');
+const totalQuestionsBlock = document.querySelector('.questions-block__info-questions-total');
+const questionArea = document.querySelector('.questions-block__question');
+const questionsResultDescr = document.querySelector('.questions-block__results-descr');
+const questionsResultLink = document.querySelector('.questions-block__results-link');
+const resultQuestionsBtn = document.querySelector('.questions-block__answer-btn');
+const questionsNextBtn = document.querySelector('.questions-block__next-btn');
+const questionsReloadBtn = document.querySelector('.questions-block__reload-btn');
+let juniorJsQuizLoad = false;
+let HTMLQuizLoad = false;
+let CSSQuizLoad = false;
+
+let juniorJsQuestionsFileLoad = false;
+
+//Загрузка и инициализация файлов
+const juniorJsQuizFile = new XMLHttpRequest();
+juniorJsQuizFile.open('GET', "./assets/files/juniorJsQuiz.json");
+juniorJsQuizFile.responseType = 'json';
+juniorJsQuizFile.send();
+let juniorJsQuiz = false;
+juniorJsQuizFile.onload = () => {
+  juniorJsQuiz = juniorJsQuizFile.response;
+  juniorJsQuizLoad = true;
+};
+
+const HTMLQuizFile = new XMLHttpRequest();
+HTMLQuizFile.open('GET', "./assets/files/HTMLQuiz.json");
+HTMLQuizFile.responseType = 'json';
+HTMLQuizFile.send();
+let HTMLQuiz = false;
+HTMLQuizFile.onload = () => {
+  HTMLQuiz = HTMLQuizFile.response;
+  HTMLQuizLoad = true;
+}
+
+const CSSQuizFile = new XMLHttpRequest();
+CSSQuizFile.open('GET', "./assets/files/CSSQuiz.json");
+CSSQuizFile.responseType = 'json';
+CSSQuizFile.send();
+let CSSQuiz = false;
+CSSQuizFile.onload = () => {
+  CSSQuiz = CSSQuizFile.response;
+  CSSQuizLoad = true;
+}
+
+const juniorJsQuestionsFile = new XMLHttpRequest();
+juniorJsQuestionsFile.open('GET', "./assets/files/juniorJsQuestions.json");
+juniorJsQuestionsFile.responseType = 'json';
+juniorJsQuestionsFile.send();
+let CSSQuestions = false;
+juniorJsQuestionsFile.onload = () => {
+  juniorJsQuestions = juniorJsQuestionsFile.response;
+  juniorJsQuestionsFileLoad = true;
+}
+
+
+
+//ПРоверка, что файлы с заданиями загружены и можно начинать работу
+let checkLoadFile = setInterval(() => {
+  if (juniorJsQuizLoad, HTMLQuizLoad, CSSQuizLoad, juniorJsQuestionsFileLoad) {
+    setTimeout(() => {
+      loadingBlock.classList.remove('_visible');
+      mainBlock.classList.add('_visible');
+    }, 200);
+    clearTimeout(checkLoadFile);
+  }
+}, 200);
 //radio-type==================================================
 const radioBlocks = document.querySelectorAll('.js-radio-type');
 radioBlocks.forEach((radioBlock) => {
@@ -42,19 +136,11 @@ switchBtns.forEach((switchBtn) => {
     }
   })
 })
-const startBlock = document.querySelector('.start-block');
-const startBtn = document.querySelector('.start-block__start-btn');
-const typesOfTasks = document.querySelector('.js-types-of-tasks');
-const typesOfTasksBtns = typesOfTasks.querySelectorAll('.js-types-of-tasks__item');
-const quizBlock = document.querySelector('.quiz-block');
-
-const questionsSections = document.querySelector('.js-types-of-questions');
-const questionsSectionsBtns = questionsSections.querySelectorAll('.js-types-of-questions__item')
-
 let quiz = false;
+let questions = false;
 let typesOfQuestions = []; //собирает атрибуты нажатых кнопок разделов (под вопросом)
 
-let quizFiles = []; //массив файлов json, которые будут учавствовать в тестировании
+let questionsFiles = []; //массив файлов json, которые будут учавствовать в тестировании
 let taskArrey; //Массив вопросов
 //Кнопка запуска заданий
 startBtn.addEventListener('click', () => {
@@ -63,26 +149,47 @@ startBtn.addEventListener('click', () => {
   if (quiz) {
     typesOfQuestions.forEach((typesOfQuestion) => {
       if (typesOfQuestion === 'juniorJs') {
-        quizFiles.push(juniorJsQuiz);
-      } else if (typesOfQuestion === 'middleJs') {
-        quizFiles.push(middleJsQuiz);
-      } else if (typesOfQuestion === 'seniorJs') {
-        quizFiles.push(seniorJsQuiz);
+        questionsFiles.push(juniorJsQuiz);
+      } else if (typesOfQuestion === 'HTML') {
+        questionsFiles.push(HTMLQuiz);
+      } else if (typesOfQuestion === 'CSS') {
+        questionsFiles.push(CSSQuiz);
       }
     })
 
-    for (let i = 0; i < quizFiles.length; i++) {
+    for (let i = 0; i < questionsFiles.length; i++) {
       if (i === 0) {
-        taskArrey = quizFiles[i]['Test'];
+        taskArrey = questionsFiles[i]['Test'];
       } else {
-        taskArrey = taskArrey.concat(quizFiles[i]['Test']);
+        taskArrey = taskArrey.concat(questionsFiles[i]['Test']);
       }
     }
     
     correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
     incorrectAnswerBlock.innerText = wrongAnswerCounter = 0;
     startQuiz(taskArrey);
+  } else if (questions) {
+    typesOfQuestions.forEach((typesOfQuestion) => {
+      if (typesOfQuestion === 'juniorJs') {
+        questionsFiles.push(juniorJsQuestions);
+      } else if (typesOfQuestion === 'HTML') {
+        questionsFiles.push(HTMLQuestions);
+      } else if (typesOfQuestion === 'CSS') {
+        questionsFiles.push(CSSQuestions);
+      }
+    })
+
+    for (let i = 0; i < questionsFiles.length; i++) {
+      if (i === 0) {
+        taskArrey = questionsFiles[i]['Questions'];
+      } else {
+        taskArrey = taskArrey.concat(questionsFiles[i]['Questions']);
+      }
+    }
+
+    startQuestions(taskArrey);
   }
+
 })
 //Функция определения, какой тип задания выбран (тестирование или вопросы)
 function selectingTaskType() {
@@ -94,10 +201,13 @@ function selectingTaskType() {
           startBlock.classList.remove('_active');
           quizBlock.classList.add('_active');
           quiz = true;
+          questions = false;
           break;
         case 'questions':
-          // console.log(13);
+          startBlock.classList.remove('_active');
+          questionsBlock.classList.add('_active');
           quiz = false;
+          questions = true;
           break;
       }
     }
@@ -116,73 +226,15 @@ function selectQuestionsSection() {
     }
   }
 }
-const questionArea = document.querySelector('.question');
-const testAnswerArea = document.querySelector('.quiz-answer');
-const testBlockNextBtn = document.querySelector('.quiz-block__next-btn');
-testBlockNextBtn.disabled = true;
-const testBlockReloadBtn = document.querySelector('.quiz-block__reload-btn');
-testBlockReloadBtn.disabled = true;
-const testBlockResultsTitle = document.querySelector('.quiz-block__results-title');
-const testBlockResultsDescr = document.querySelector('.quiz-block__results-descr');
-const testBlockResultsLink = document.querySelector('.quiz-block__results-link');
-const answeredQuestionsBlock = document.querySelector('.quiz-block__info-questions-answered');
-const totalQuestionsBlock = document.querySelector('.quiz-block__info-questions-total');
-const correctAnswerBlock = document.querySelector('.quiz-block__info-correct-answer-count');
-const incorrectAnswerBlock = document.querySelector('.quiz-block__info-incorrect-answer-count');
-let testOutputResult = '';
+
+let quizOutputResult = '';
 let counterOfCorrectAnswers; // счетчик правильных ответов
 let wrongAnswerCounter; // счетчик неправильных ответов
-
-let juniorJsLoad = false;
-let middleJsLoad = false;
-let seniorJsLoad = false;
-
-//Загрузка и инициализация файлов
-const juniorJsQuizFile = new XMLHttpRequest();
-juniorJsQuizFile.open('GET', "./assets/files/juniorJsQuiz.json");
-juniorJsQuizFile.responseType = 'json';
-juniorJsQuizFile.send();
-let juniorJsQuiz = false;
-juniorJsQuizFile.onload = () => {
-  juniorJsQuiz = juniorJsQuizFile.response;
-  juniorJsLoad = true;
-};
-
-const middleJsQuizFile = new XMLHttpRequest();
-middleJsQuizFile.open('GET', "./assets/files/middleJsQuiz.json");
-middleJsQuizFile.responseType = 'json';
-middleJsQuizFile.send();
-let middleJsQuiz = false;
-middleJsQuizFile.onload = () => {
-  middleJsQuiz = middleJsQuizFile.response;
-  middleJsLoad = true;
-}
-
-const seniorJsQuizFile = new XMLHttpRequest();
-seniorJsQuizFile.open('GET', "./assets/files/seniorJsQuiz.json");
-seniorJsQuizFile.responseType = 'json';
-seniorJsQuizFile.send();
-let seniorJsQuiz = false;
-seniorJsQuizFile.onload = () => {
-  seniorJsQuiz = seniorJsQuizFile.response;
-  seniorJsLoad = true;
-}
-
-//ПРоверка, что файлы с заданиями загружены и можно начинать работу
-let checkLoadFile = setInterval(() => {
-  if (juniorJsLoad, middleJsLoad, seniorJsLoad) {
-
-    clearTimeout(checkLoadFile);
-  }
-}, 200);
 
 //Начать тест заново
 testBlockReloadBtn.addEventListener('click', () => {
   correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
   incorrectAnswerBlock.innerText = wrongAnswerCounter = 0;
-  testBlockResultsTitle.innerText = '';
-  testBlockResultsTitle.classList.remove('_red');
-  testBlockResultsTitle.classList.remove('_green');
   startQuiz(taskArrey);
   testBlockReloadBtn.classList.remove('_visible');
 })
@@ -191,25 +243,23 @@ testBlockReloadBtn.addEventListener('click', () => {
 function startQuiz(quizFiles) {
   //Выводим текущий вопрос от общего количества
   let currentQuestion = 1;
-  answeredQuestionsBlock.innerHTML = currentQuestion;
+  answeredQuizBlock.innerHTML = currentQuestion;
   //Добавляет на страницу общее количество вопросов 
-  totalQuestionsBlock.innerHTML = `${quizFiles.length}`
+  totalQuizBlock.innerHTML = `${quizFiles.length}`
   //Вывод вопросов и вариантов ответа на страницу
   let listOfQuestionsNumbers = randomCicle(quizFiles.length);
-  outputQuestionsAndAnswers(quizFiles, listOfQuestionsNumbers);
+  outputQuizAndAnswers(quizFiles, listOfQuestionsNumbers);
   //переход к следующему вопросу по клику кнопки
   testBlockNextBtn.addEventListener('click', () => {
+    console.log(listOfQuestionsNumbers.length);
     testBlockNextBtn.disabled = true;
     listOfQuestionsNumbers.shift();
     if (listOfQuestionsNumbers.length > 0) {
-      outputQuestionsAndAnswers(quizFiles, listOfQuestionsNumbers);
+      outputQuizAndAnswers(quizFiles, listOfQuestionsNumbers);
       //Обновление счетчика
       currentQuestion += 1;
-      answeredQuestionsBlock.innerHTML = currentQuestion;
+      answeredQuizBlock.innerHTML = currentQuestion;
       //Обнуление описания ответа и пояснения к нему в виде ссылки
-      testBlockResultsTitle.innerText = '';
-      testBlockResultsTitle.classList.remove('_red');
-      testBlockResultsTitle.classList.remove('_green');
       testBlockResultsDescr.innerText = '';
       testBlockResultsLink.innerHTML = '';
     } else {
@@ -218,19 +268,19 @@ function startQuiz(quizFiles) {
   })
 }
 //Функция вывода вопросов и варинатов ответа на страницу
-function outputQuestionsAndAnswers(quizFile, questionsArrey) {
+function outputQuizAndAnswers(quizFile, questionsArrey) {
   testAnswerArea.innerHTML = '';
-  testOutputResult = '';
+  quizOutputResult = '';
 
   //Определение и вывод рандомного вопроса в HTML
   let questionNumber = questionsArrey[0];
-  questionArea.innerHTML = `${quizFile[questionNumber]["question"]}`;
+  questionQuizArea.innerHTML = `${quizFile[questionNumber]["question"]}`;
   //Вывод ответов в HTML
   let listOfAnswersNumbers = randomCicle(quizFile[questionNumber]["answers"].length) //перемешивание ответов в рандомном порядке
   for (let i = 0; i < quizFile[questionNumber]["answers"].length; i++) {
-    testOutputResult += fillingAnswerArea(quizFile, questionNumber, listOfAnswersNumbers[i]);
+    quizOutputResult += fillingAnswerArea(quizFile, questionNumber, listOfAnswersNumbers[i]);
   }
-  testAnswerArea.innerHTML = testOutputResult;
+  testAnswerArea.innerHTML = quizOutputResult;
   checkValidResultTest(quizFile, questionNumber, questionsArrey);
 }
 //Функция генерации кода для одного ответа
@@ -269,20 +319,10 @@ function checkValidResultTest(questionFile, questionNumber, questionsArrey) {
         testBlockReloadBtn.classList.add('_visible');
       }
 
-      //Результат проверки отевта на правильность с его выводом
-      if (this.getAttribute('data-status') === 'true') {
-        testBlockResultsTitle.innerText = "Ответ правильный";
-        testBlockResultsTitle.classList.remove('_red');
-        testBlockResultsTitle.classList.add('_green');
-      } else {
-        testBlockResultsTitle.innerText = "Ответ неправильный";
-        testBlockResultsTitle.classList.remove('_green');
-        testBlockResultsTitle.classList.add('_red');
-      }
       //Публикация описания ответа
       testBlockResultsDescr.innerText = questionFile[questionNumber]["explanation"];
       //Публикация ссылки к ответу
-      testBlockResultsLink.innerHTML = `<a href="${questionFile[questionNumber]["links"]}" target="_blank">Читать подробнее</a>`;
+      testBlockResultsLink.innerHTML = `<a href="${questionFile[questionNumber]["link"]}" target="_blank">Читать подробнее</a>`;
 
     })
   })
@@ -296,4 +336,66 @@ function randomCicle(maxNumber) {
   }
   let randomNumberArr = numberArr.sort(() => Math.random() - 0.5);
   return randomNumberArr;
+}
+questionsNextBtn.disabled = true;
+questionsReloadBtn.disabled = true;
+
+//Начать опрос заново
+
+questionsReloadBtn.addEventListener('click', () => {
+  startQuestions(taskArrey);
+  //Обнуление описания ответа и пояснения к нему в виде ссылки
+  questionsResultDescr.innerText = '';
+  questionsResultLink.innerHTML = '';
+  resultQuestionsBtn.disabled = false;
+  questionsReloadBtn.disabled = true;
+})
+
+function startQuestions(questionsFiles) {
+  //Выводим текущий вопрос от общего количества
+  let currentQuestion = 1;
+  answeredQuestionsBlock.innerHTML = currentQuestion;
+  //Добавляет на страницу общее количество вопросов 
+  totalQuestionsBlock.innerHTML = `${questionsFiles.length}`;
+  //Вывод вопросов на страницу
+  let listOfQuestionsNumbers = randomCicle(questionsFiles.length);
+  outputQuestions(questionsFiles, listOfQuestionsNumbers)
+  //Переход к следующему вопросу по клику кнопки
+  questionsNextBtn.addEventListener('click', () => {
+    questionsNextBtn.disabled = true;
+    listOfQuestionsNumbers.shift();
+    if (listOfQuestionsNumbers.length > 0) {
+      outputQuestions(questionsFiles, listOfQuestionsNumbers);
+      //Обновление счетчика
+      currentQuestion += 1;
+      answeredQuestionsBlock.innerHTML = currentQuestion;
+      //Обнуление описания ответа и пояснения к нему в виде ссылки
+      questionsResultDescr.innerText = '';
+      questionsResultLink.innerHTML = '';
+      //Обновление состояния кнопки
+      resultQuestionsBtn.disabled = false;
+    }
+  })
+  //Показь ответ на вопрос по клику кнопки
+  resultQuestionsBtn.addEventListener('click', () => {
+    outputAnswers(questionsFiles, listOfQuestionsNumbers);
+  })
+}
+//Функция определения и вывода рандомного вопроса в HTML
+function outputQuestions(questionsFile, questionsArrey) {
+  let questionNumber = questionsArrey[0];
+  questionArea.innerHTML = `${questionsFile[questionNumber]["question"]}`;
+}
+//Ыункция вывода ответа на вопрос
+function outputAnswers(questionsFile, questionsArrey) {
+  // console.log(questionsArrey.length);
+  let questionNumber = questionsArrey[0];
+  questionsResultDescr.innerText = `${questionsFile[questionNumber]["explanation"]}`;
+  questionsResultLink.innerHTML = `<a href="${questionsFile[questionNumber]["link"]}" target="_blank">Читать подробнее</a>`;
+  questionsNextBtn.disabled = false;
+  resultQuestionsBtn.disabled = true;
+  if (questionsArrey.length <= 1) {
+    questionsNextBtn.disabled = true;
+    questionsReloadBtn.disabled = false;
+  }
 }

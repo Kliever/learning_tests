@@ -1310,6 +1310,32 @@ body {
   font-family: "Roboto";
 }
 
+.wrapper {
+  min-height: 100vh;
+  position: relative;
+}
+
+.loading {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: #adadad;
+  font-size: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.loading._visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .container {
   max-width: 1024px;
   width: 100%;
@@ -1319,6 +1345,12 @@ body {
 
 .main {
   margin-top: 20px;
+  opacity: 0;
+  visibility: hidden;
+}
+.main._visible {
+  opacity: 1;
+  visibility: visible;
 }
 
 .main-title {
@@ -1337,7 +1369,7 @@ body {
 }
 
 .checkbox {
-  display: block;
+  display: flex;
 }
 .checkbox._win .checkbox__info {
   color: green;
@@ -1551,20 +1583,8 @@ body {
   margin-bottom: 40px;
 }
 
-.quiz-block__results-title {
-  padding: 2px 10px;
-  background: #fff;
-  border-radius: 5px;
-  height: 34px;
-  margin-bottom: 20px;
-}
-.quiz-block__results-title._green {
-  color: #00ff22;
-  background: #000;
-}
-.quiz-block__results-title._red {
-  color: #ff0000;
-  background: #000;
+.quiz-answer__checkbox {
+  margin-bottom: 10px;
 }
 
 .quiz-block__next-btns {
@@ -1619,4 +1639,13 @@ body {
   .quiz-block__results-link a:hover {
     padding: 2px 50px 2px 10px;
   }
+}
+
+.questions-block {
+  opacity: 0;
+  visibility: hidden;
+}
+.questions-block._active {
+  opacity: 1;
+  visibility: visible;
 }
