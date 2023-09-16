@@ -2,8 +2,6 @@
 let quizOutputResult = '';
 let counterOfCorrectAnswers; // счетчик правильных ответов
 let wrongAnswerCounter; // счетчик неправильных ответов
-let listOfQuestionsNumbers; //вопросы в перемешанном виде
-let currentQuestion;//текущий вопрос от общего количества
 //Начать тест заново
 testBlockReloadBtn.addEventListener('click', () => {
   correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;

@@ -33,3 +33,7 @@ const questionsResultLink = document.querySelector('.questions-block__results-li
 const resultQuestionsBtn = document.querySelector('.questions-block__answer-btn');
 const questionsNextBtn = document.querySelector('.questions-block__next-btn');
 const questionsReloadBtn = document.querySelector('.questions-block__reload-btn');
+
+// Глобальные переменные
+let listOfQuestionsNumbers; //вопросы в перемешанном виде
+let currentQuestion;//текущий вопрос от общего количества

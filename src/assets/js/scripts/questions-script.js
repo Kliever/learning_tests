@@ -1,6 +1,7 @@
 questionsNextBtn.disabled = true;
 questionsReloadBtn.disabled = true;
 
+//Пройти задания заново
 questionsReloadBtn.addEventListener('click', () => {
   startQuestions(taskArrey);
   //Обнуление описания ответа и пояснения к нему в виде ссылки
@@ -19,12 +20,12 @@ function startQuestions(questionsFiles) {
   //Вывод вопросов на страницу
   listOfQuestionsNumbers = randomCicle(questionsFiles.length); //перемешивание вопросов в рандомном порядке
   outputQuestions(questionsFiles, listOfQuestionsNumbers)
-  //Показь ответ на вопрос по клику кнопки
-  resultQuestionsBtn.addEventListener('click', () => {
-    outputAnswers(questionsFiles, listOfQuestionsNumbers);
-  })
 }
 
+//Показь ответ на вопрос по клику кнопки
+resultQuestionsBtn.addEventListener('click', () => {
+  outputAnswers(taskArrey, listOfQuestionsNumbers);
+})
 
 //Переход к следующему вопросу по клику кнопки
 questionsNextBtn.addEventListener('click', () => {
@@ -53,7 +54,6 @@ function outputQuestions(questionsFile, questionsArrey) {
 }
 //Ыункция вывода ответа на вопрос
 function outputAnswers(questionsFile, questionsArrey) {
-  // console.log(questionsArrey.length);
   let questionNumber = questionsArrey[0];
   questionsResultDescr.innerText = `${questionsFile[questionNumber]["explanation"]}`;
   questionsResultLink.innerHTML = `<a href="${questionsFile[questionNumber]["link"]}" target="_blank">Читать подробнее</a>`;
