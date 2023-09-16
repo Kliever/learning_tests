@@ -802,6 +802,29 @@
       ]
     },
     {
+      "question": "Что такое замыкание (closure) в JavaScript?",
+      "explanation": "Замыкание — это комбинация функции и лексического окружения, в котором эта функция была определена. Другими словами, замыкание даёт вам доступ к внешней функции из внутренней функции. В JavaScript замыкания создаются каждый раз при создании функции, во время её создания.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures",
+      "answers": [
+        {
+          "answer": "Это функция, которая имеет доступ к переменным из мнешней функции",
+          "status": "true"
+        },
+        {
+          "answer": "Это специальный тип данных",
+          "status": "false"
+        },
+        {
+          "answer": "Это объект",
+          "status": "false"
+        },
+        {
+          "answer": "Это элемент массива",
+          "status": "false"
+        }
+      ]
+    },
+    {
       "question": "Question",
       "explanation": "explanation",
       "link": "link",

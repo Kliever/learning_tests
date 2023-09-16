@@ -2,7 +2,8 @@
 let quizOutputResult = '';
 let counterOfCorrectAnswers; // счетчик правильных ответов
 let wrongAnswerCounter; // счетчик неправильных ответов
-
+let listOfQuestionsNumbers; //вопросы в перемешанном виде
+let currentQuestion;//текущий вопрос от общего количества
 //Начать тест заново
 testBlockReloadBtn.addEventListener('click', () => {
   correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
@@ -14,31 +15,32 @@ testBlockReloadBtn.addEventListener('click', () => {
 //Функция запуска отдельного теста
 function startQuiz(quizFiles) {
   //Выводим текущий вопрос от общего количества
-  let currentQuestion = 1;
+  currentQuestion = 1;
   answeredQuizBlock.innerHTML = currentQuestion;
   //Добавляет на страницу общее количество вопросов 
   totalQuizBlock.innerHTML = `${quizFiles.length}`
   //Вывод вопросов и вариантов ответа на страницу
-  let listOfQuestionsNumbers = randomCicle(quizFiles.length);
+  listOfQuestionsNumbers = randomCicle(quizFiles.length);//Перемешивание вопросов
   outputQuizAndAnswers(quizFiles, listOfQuestionsNumbers);
-  //переход к следующему вопросу по клику кнопки
-  testBlockNextBtn.addEventListener('click', () => {
-    console.log(listOfQuestionsNumbers.length);
-    testBlockNextBtn.disabled = true;
-    listOfQuestionsNumbers.shift();
-    if (listOfQuestionsNumbers.length > 0) {
-      outputQuizAndAnswers(quizFiles, listOfQuestionsNumbers);
-      //Обновление счетчика
-      currentQuestion += 1;
-      answeredQuizBlock.innerHTML = currentQuestion;
-      //Обнуление описания ответа и пояснения к нему в виде ссылки
-      testBlockResultsDescr.innerText = '';
-      testBlockResultsLink.innerHTML = '';
-    } else {
-      testBlockNextBtn.disabled = true;
-    }
-  })
 }
+
+//переход к следующему вопросу по клику кнопки
+testBlockNextBtn.addEventListener('click', () => {
+  testBlockNextBtn.disabled = true;
+  listOfQuestionsNumbers.shift();
+  if (listOfQuestionsNumbers.length > 0) {
+    outputQuizAndAnswers(taskArrey, listOfQuestionsNumbers);
+    //Обновление счетчика
+    currentQuestion += 1;
+    answeredQuizBlock.innerHTML = currentQuestion;
+    //Обнуление описания ответа и пояснения к нему в виде ссылки
+    testBlockResultsDescr.innerText = '';
+    testBlockResultsLink.innerHTML = '';
+  } else {
+    testBlockNextBtn.disabled = true;
+  }
+})
+
 //Функция вывода вопросов и варинатов ответа на страницу
 function outputQuizAndAnswers(quizFile, questionsArrey) {
   testAnswerArea.innerHTML = '';
