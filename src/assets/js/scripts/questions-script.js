@@ -30,7 +30,7 @@ resultQuestionsBtn.addEventListener('click', () => {
 //Переход к следующему вопросу по клику кнопки
 questionsNextBtn.addEventListener('click', () => {
   questionsNextBtn.disabled = true;
-  listOfQuestionsNumbers.shift();
+  listOfQuestionsNumbers.pop();
   if (listOfQuestionsNumbers.length > 0) {
     outputQuestions(taskArrey, listOfQuestionsNumbers);
     //Обновление счетчика
@@ -49,8 +49,7 @@ questionsNextBtn.addEventListener('click', () => {
 
 //Функция определения и вывода рандомного вопроса в HTML
 function outputQuestions(questionsFile, questionsArrey) {
-  console.log(questionsArrey);
-  let questionNumber = questionsArrey[0];
+  let questionNumber = questionsArrey[questionsArrey.length - 1];
   questionArea.innerHTML = `${questionsFile[questionNumber]["question"]}`;
 }
 //Ыункция вывода ответа на вопрос

@@ -25,7 +25,7 @@ function startQuiz(quizFiles) {
 //переход к следующему вопросу по клику кнопки
 testBlockNextBtn.addEventListener('click', () => {
   testBlockNextBtn.disabled = true;
-  listOfQuestionsNumbers.shift();
+  listOfQuestionsNumbers.pop();
   if (listOfQuestionsNumbers.length > 0) {
     outputQuizAndAnswers(taskArrey, listOfQuestionsNumbers);
     //Обновление счетчика
@@ -45,7 +45,7 @@ function outputQuizAndAnswers(quizFile, questionsArrey) {
   quizOutputResult = '';
 
   //Определение и вывод рандомного вопроса в HTML
-  let questionNumber = questionsArrey[0];
+  let questionNumber = questionsArrey[questionsArrey.length - 1];
   questionQuizArea.innerHTML = `${quizFile[questionNumber]["question"]}`;
   //Вывод ответов в HTML
   let listOfAnswersNumbers = randomCicle(quizFile[questionNumber]["answers"].length) //перемешивание ответов в рандомном порядке
