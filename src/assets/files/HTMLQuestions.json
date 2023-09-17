@@ -1,0 +1,19 @@
+{
+  "Questions": [
+    {
+      "question" : "Вопрос-questions",
+      "explanation": "Пояснение-questions",
+      "link": "https://www.vk.com/"
+    },
+    {
+      "question" : "Вопрос-questions 2",
+      "explanation": "Пояснение-questions 2",
+      "link": "https://www.vk.com/"
+    },
+    {
+      "question" : "Вопрос-questions 3",
+      "explanation": "Пояснение-questions 3",
+      "link": "https://www.vk.com/"
+    }
+  ]
+}

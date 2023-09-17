@@ -61,6 +61,8 @@ let HTMLQuizLoad = false;
 let CSSQuizLoad = false;
 
 let juniorJsQuestionsFileLoad = false;
+let HTMLQuestionsFileLoad = false;
+let CSSQuestionsFileLoad = false;
 
 //Загрузка и инициализация файлов
 const juniorJsQuizFile = new XMLHttpRequest();
@@ -97,17 +99,37 @@ const juniorJsQuestionsFile = new XMLHttpRequest();
 juniorJsQuestionsFile.open('GET', "./assets/files/juniorJsQuestions.json");
 juniorJsQuestionsFile.responseType = 'json';
 juniorJsQuestionsFile.send();
-let CSSQuestions = false;
+let JunioJsQuestions = false;
 juniorJsQuestionsFile.onload = () => {
   juniorJsQuestions = juniorJsQuestionsFile.response;
   juniorJsQuestionsFileLoad = true;
+}
+
+const HTMLQuestionsFile = new XMLHttpRequest();
+HTMLQuestionsFile.open('GET', "./assets/files/HTMLQuestions.json");
+HTMLQuestionsFile.responseType = 'json';
+HTMLQuestionsFile.send();
+let HTMLQuestions = false;
+HTMLQuestionsFile.onload = () => {
+  HTMLQuestions = HTMLQuestionsFile.response;
+  HTMLQuestionsFileLoad = true;
+}
+
+const CSSQuestionsFile = new XMLHttpRequest();
+CSSQuestionsFile.open('GET', "./assets/files/CSSQuestions.json");
+CSSQuestionsFile.responseType = 'json';
+CSSQuestionsFile.send();
+let CSSQuestions = false;
+CSSQuestionsFile.onload = () => {
+  CSSQuestions = CSSQuestionsFile.response;
+  CSSQuestionsFileLoad = true;
 }
 
 
 
 //ПРоверка, что файлы с заданиями загружены и можно начинать работу
 let checkLoadFile = setInterval(() => {
-  if (juniorJsQuizLoad, HTMLQuizLoad, CSSQuizLoad, juniorJsQuestionsFileLoad) {
+  if (juniorJsQuizLoad, HTMLQuizLoad, CSSQuizLoad, juniorJsQuestionsFileLoad, HTMLQuestionsFileLoad, CSSQuestionsFileLoad) {
     setTimeout(() => {
       loadingBlock.classList.remove('_visible');
       mainBlock.classList.add('_visible');
