@@ -1,5 +1,5 @@
 questionsNextBtn.disabled = true;
-questionsReloadBtn.disabled = true;
+questionsReloadBtn.classList.remove('_visible');
 
 //Пройти задания заново
 questionsReloadBtn.addEventListener('click', () => {
@@ -8,7 +8,7 @@ questionsReloadBtn.addEventListener('click', () => {
   questionsResultDescr.innerText = '';
   questionsResultLink.innerHTML = '';
   resultQuestionsBtn.disabled = false;
-  questionsReloadBtn.disabled = true;
+  questionsReloadBtn.classList.remove('_visible');
 })
 
 function startQuestions(questionsFiles) {
@@ -61,6 +61,6 @@ function outputAnswers(questionsFile, questionsArrey) {
   resultQuestionsBtn.disabled = true;
   if (questionsArrey.length <= 1) {
     questionsNextBtn.disabled = true;
-    questionsReloadBtn.disabled = false;
+    questionsReloadBtn.classList.add('_visible');
   }
 }

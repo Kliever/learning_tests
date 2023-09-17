@@ -5,12 +5,12 @@ body {
   font-family: 'Roboto';
 }
 
-.wrapper{
+.wrapper {
   min-height: 100vh;
   position: relative;
 }
 
-.loading{
+.loading {
   position: absolute;
   top: 0;
   left: 0;
@@ -25,7 +25,8 @@ body {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s, visibility 0.3s;
-  &._visible{
+
+  &._visible {
     opacity: 1;
     visibility: visible;
   }
@@ -42,7 +43,8 @@ body {
   margin-top: 20px;
   opacity: 0;
   visibility: hidden;
-  &._visible{
+
+  &._visible {
     opacity: 1;
     visibility: visible;
   }
@@ -110,8 +112,8 @@ body {
 
 .checkbox__box {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 24px;
+  height: 24px;
   border: 1px solid var(--grey);
   transform: translate(0px, 2px) rotate(0deg);
   margin-right: 10px;
@@ -148,7 +150,8 @@ body {
     &:hover {
       box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);
     }
-    &:disabled:hover{
+
+    &:disabled:hover {
       box-shadow: none;
     }
   }
@@ -170,4 +173,63 @@ body {
     background: #4b4b4b;
     color: #fff;
   }
+}
+
+.result-link {
+  a {
+    display: inline-block;
+    padding: 2px 30px 2px 10px;
+    background: #000;
+    color: #00f7ff;
+    border-radius: 5px;
+    transition: padding .1s;
+    position: relative;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translate(0px, calc(-50% + 3px)) rotate(60deg);
+      height: 10px;
+      width: 1px;
+      background: #00f7ff;
+      transition: right .1s;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: 20px;
+      transform: translate(0px, calc(-50% - 3px)) rotate(-60deg);
+      height: 10px;
+      width: 1px;
+      background: #00f7ff;
+      transition: right .1s;
+    }
+
+    @media (min-width: 1024px) {
+      &:hover {
+        padding: 2px 50px 2px 10px;
+      }
+    }
+  }
+}
+
+.info-questions-answered,
+.info-questions-total{
+  color: #00ff22;
+  display: inline-block;
+  background: #000;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.info-questions-total{
+  color: #ff0000;
+}
+
+.results-descr{
+  margin-bottom: 20px;
 }
