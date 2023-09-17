@@ -1485,6 +1485,33 @@ body {
   column-gap: 10px;
 }
 
+.header__back-btn {
+  padding-left: 40px;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+}
+.header__back-btn::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0px, -50%) rotate(0deg);
+  left: 14px;
+  height: 12px;
+  width: 12px;
+  background: url("../img/icons/arrow-left-solid.svg") center/100% no-repeat;
+  transition: left 0.3s;
+}
+@media (min-width: 1024px) {
+  .header__back-btn:hover::after {
+    left: 10px;
+  }
+}
+.header__back-btn._visible {
+  opacity: 1;
+  visibility: visible;
+}
+
 .start-block {
   display: none;
 }

@@ -3,6 +3,7 @@ const startBtn = document.querySelector('.start-block__start-btn');
 const typesOfTasks = document.querySelector('.js-types-of-tasks');
 const typesOfTasksBtns = typesOfTasks.querySelectorAll('.js-types-of-tasks__item');
 const quizBlock = document.querySelector('.quiz-block');
+const headerBackBtn = document.querySelector('.header__back-btn');
 
 const questionsSections = document.querySelector('.js-types-of-questions');
 const questionsSectionsBtns = questionsSections.querySelectorAll('.js-types-of-questions__item');

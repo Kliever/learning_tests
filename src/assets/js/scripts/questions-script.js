@@ -49,6 +49,7 @@ questionsNextBtn.addEventListener('click', () => {
 
 //Функция определения и вывода рандомного вопроса в HTML
 function outputQuestions(questionsFile, questionsArrey) {
+  console.log(questionsArrey);
   let questionNumber = questionsArrey[0];
   questionArea.innerHTML = `${questionsFile[questionNumber]["question"]}`;
 }

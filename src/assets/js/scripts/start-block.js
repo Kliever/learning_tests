@@ -3,9 +3,12 @@ let questions = false;
 let typesOfQuestions = []; //собирает атрибуты нажатых кнопок разделов (под вопросом)
 
 let questionsFiles = []; //массив файлов json, которые будут учавствовать в тестировании
-let taskArrey; //Массив вопросов
+let taskArrey = []; //Массив вопросов
 //Кнопка запуска заданий
 startBtn.addEventListener('click', () => {
+  //Показ кнопки "К выбору категорий"
+  headerBackBtn.classList.add('_visible');
+  //
   selectingTaskType();
   selectQuestionsSection();
   if (quiz) {
@@ -20,13 +23,9 @@ startBtn.addEventListener('click', () => {
     })
 
     for (let i = 0; i < questionsFiles.length; i++) {
-      if (i === 0) {
-        taskArrey = questionsFiles[i]['Test'];
-      } else {
-        taskArrey = taskArrey.concat(questionsFiles[i]['Test']);
-      }
+      taskArrey = taskArrey.concat(questionsFiles[i]['Test']);
     }
-    
+
     correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
     incorrectAnswerBlock.innerText = wrongAnswerCounter = 0;
     startQuiz(taskArrey);
@@ -42,17 +41,24 @@ startBtn.addEventListener('click', () => {
     })
 
     for (let i = 0; i < questionsFiles.length; i++) {
-      if (i === 0) {
-        taskArrey = questionsFiles[i]['Questions'];
-      } else {
-        taskArrey = taskArrey.concat(questionsFiles[i]['Questions']);
-      }
+      taskArrey = taskArrey.concat(questionsFiles[i]['Questions']);
     }
 
     startQuestions(taskArrey);
   }
 
 })
+//Возврат к выбору категорий
+headerBackBtn.addEventListener('click', () => {
+  startBlock.classList.add('_active');
+  headerBackBtn.classList.remove('_visible');
+  quizBlock.classList.remove('_active');
+  questionsBlock.classList.remove('_active');
+  taskArrey.length = 0;
+  questionsFiles.length = 0;
+  typesOfQuestions.length = 0;
+})
+
 //Функция определения, какой тип задания выбран (тестирование или вопросы)
 function selectingTaskType() {
   for (let i = 0; i < typesOfTasksBtns.length; i++) {

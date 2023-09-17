@@ -1,10 +1,10 @@
-.header{
-  
-}
+.header {}
+
 .header__top {
   position: relative;
   padding: 20px 0;
   margin-bottom: 20px;
+
   &::after {
     content: '';
     position: absolute;
@@ -16,16 +16,44 @@
   }
 }
 
-.header__descr{
+.header__descr {
   text-align: center;
   font-size: 30px;
 }
 
-.start-block__btns{
+.start-block__btns {
   display: flex;
   column-gap: 10px;
 }
 
-.header__quiz-btn {
- 
+.header__quiz-btn {}
+
+.header__back-btn {
+  padding-left: 40px;
+  position: relative;
+  opacity: 0;
+  visibility: hidden;
+  &::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translate(0px, -50%) rotate(0deg);
+    left: 14px;
+    height: 12px;
+    width: 12px;
+    background: url('../img/icons/arrow-left-solid.svg') center / 100% no-repeat;
+    transition: left .3s;
+  }
+
+  @media (min-width: 1024px) {
+    &:hover {
+      &::after{
+        left: 10px;
+      }
+    }
+  }
+  &._visible{
+    opacity: 1;
+    visibility: visible;
+  }
 }
