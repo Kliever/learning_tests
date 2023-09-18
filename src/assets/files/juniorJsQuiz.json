@@ -825,6 +825,431 @@
       ]
     },
     {
+      "question": "Какая из следующих конструкций создает объект в JavaScript?",
+      "explanation": "",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_objects",
+      "answers": [
+        {
+          "answer": "{1: 'one', 2: 'two'}",
+          "status": "true"
+        },
+        {
+          "answer": "[1, 2, 3]",
+          "status": "false"
+        },
+        {
+          "answer": "'Hello, World!'",
+          "status": "false"
+        },
+        {
+          "answer": "42",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какие конструкции для циклов есть в JavaScript?",
+      "explanation": "Циклы - простой способ сделать какое-то действие несколько раз. Существуют три конструкции для создания циклов: for, while, do...while",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration",
+      "answers": [
+        {
+          "answer": "Три: for, while, do...while",
+          "status": "true"
+        },
+        {
+          "answer": "Только две: for, while",
+          "status": "false"
+        },
+        {
+          "answer": "Только одна: for",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какая арифметическая операция приводит к ошибке в JavaScript?",
+      "explanation": "К ошибке приведут операции инкремента/декремента (увеличение или уменьшение на единицу), если попытаться вызвать их не на переменной",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "++1",
+          "status": "true"
+        },
+        {
+          "answer": "Деление на ноль",
+          "status": "false"
+        },
+        {
+          "answer": "Умножение числа на строку",
+          "status": "false"
+        },
+        {
+          "answer": "Корень из отрицательного числа",
+          "status": "false"
+        },
+        {
+          "answer": "++counter",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Что делает оператор === ?",
+      "explanation": "Возвращает true, если операнды равны и имеют одинаковый тип.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "Сравнивает без приведения типов",
+          "status": "true"
+        },
+        {
+          "answer": "Проверяет правильность введенных данных",
+          "status": "false"
+        },
+        {
+          "answer": "Сравнивает с приведением типов",
+          "status": "false"
+        },
+        {
+          "answer": "Нет такого оператора",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Что относится к функциональной области видимости?",
+      "explanation": "Функциональная область видимости — это область видимости в пределах тела функции. Можно сказать, что она ограничена { и } функции. К переменной b есть доступ только внутри функции scoped . Функциональная область видимости — очень мощный инструмент для разделения кода.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
+      "answers": [
+        {
+          "answer": "Область видимости в пределах одной функции",
+          "status": "true"
+        },
+        {
+          "answer": "Область видимости для всех функций в проекте",
+          "status": "false"
+        },
+        {
+          "answer": "Область видимости вне объявленных функций",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Каково будет значение переменной i после выполнения приведенного JavaScript кода? var i = 1; while (i <= 2) { i+=5; }",
+      "explanation": "Выражение do...while создаёт цикл, который выполняет указанное выражение до тех пор, пока условие не станет ложным. Условие проверяется после выполнения выражения, то есть выражение выполнится как минимум один раз.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while",
+      "answers": [
+        {
+          "answer": "6",
+          "status": "true"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        },
+        {
+          "answer": "1",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Каково будет значение переменной j после выполнения приведенного JavaScript кода? var j = 0; for (var i = 0; i < 2; i++) { j=i; }",
+      "explanation": "Оператор for создаёт цикл, состоящий из трех необязательных выражений, заключенных в круглые скобки и разделенных точкой с запятой, за которыми следует инструкция (часто блок инструкций), которая должна выполняться в цикле.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for",
+      "answers": [
+        {
+          "answer": "1",
+          "status": "true"
+        },
+        {
+          "answer": "2",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Какое значение будет выведено в результате выполнения скрипта? var j = 0; for (var i = 0; i <= 10; i++); { j += 1; } document.write(j);",
+      "explanation": "Блок { j += 1; } не относится к циклу for, так как отделен от него точкой с запятой",
+      "link": "",
+      "answers": [
+        {
+          "answer": "1",
+          "status": "true"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        },
+        {
+          "answer": "9",
+          "status": "false"
+        },
+        {
+          "answer": "10",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Каково будет значение переменной i после выполнения приведенного JavaScript кода? var i = 0; while (i <= 10) { i+=5; }",
+      "explanation": "",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while",
+      "answers": [
+        {
+          "answer": "15",
+          "status": "true"
+        },
+        {
+          "answer": "10",
+          "status": "false"
+        },
+        {
+          "answer": "5",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "question": "Question",
+      "explanation": "explanation",
+      "link": "link",
+      "answers": [
+        {
+          "answer": "Answer",
+          "status": "true"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        },
+        {
+          "answer": "Answer",
+          "status": "false"
+        }
+      ]
+    },
+    {
       "question": "Question",
       "explanation": "explanation",
       "link": "link",

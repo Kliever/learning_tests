@@ -5,7 +5,7 @@ questionsReloadBtn.classList.remove('_visible');
 questionsReloadBtn.addEventListener('click', () => {
   startQuestions(taskArrey);
   //Обнуление описания ответа и пояснения к нему в виде ссылки
-  questionsResultDescr.innerText = '';
+  questionsResultDescr.innerHTML = '';
   questionsResultLink.innerHTML = '';
   resultQuestionsBtn.disabled = false;
   questionsReloadBtn.classList.remove('_visible');
@@ -37,7 +37,7 @@ questionsNextBtn.addEventListener('click', () => {
     currentQuestion += 1;
     answeredQuestionsBlock.innerHTML = currentQuestion;
     //Обнуление описания ответа и пояснения к нему в виде ссылки
-    questionsResultDescr.innerText = '';
+    questionsResultDescr.innerHTML = '';
     questionsResultLink.innerHTML = '';
     //Обновление состояния кнопки
     resultQuestionsBtn.disabled = false;
@@ -54,8 +54,8 @@ function outputQuestions(questionsFile, questionsArrey) {
 }
 //Ыункция вывода ответа на вопрос
 function outputAnswers(questionsFile, questionsArrey) {
-  let questionNumber = questionsArrey[0];
-  questionsResultDescr.innerText = `${questionsFile[questionNumber]["explanation"]}`;
+  let questionNumber = questionsArrey[questionsArrey.length - 1];
+  questionsResultDescr.innerHTML = `${questionsFile[questionNumber]["explanation"]}`;
   questionsResultLink.innerHTML = `<a href="${questionsFile[questionNumber]["link"]}" target="_blank">Читать подробнее</a>`;
   questionsNextBtn.disabled = false;
   resultQuestionsBtn.disabled = true;
