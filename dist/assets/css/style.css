@@ -1584,6 +1584,13 @@ body {
   margin-bottom: 20px;
 }
 
+.start-block__number-of-question-label {
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 10px;
+}
+
 .start-block__start-btn {
   height: 50px;
   width: 400px;
@@ -1628,6 +1635,16 @@ body {
   font-size: 20px;
 }
 
+.quiz-block__info-num-question,
+.questions-block__info-num-question {
+  color: #fff;
+  display: block;
+  background: #000;
+  border-radius: 5px;
+  padding: 10px 10px;
+  margin-bottom: 10px;
+}
+
 .quiz-block__question {
   margin-bottom: 40px;
 }
@@ -1651,7 +1668,7 @@ body {
 }
 
 .quiz-block__answer {
-  margin-bottom: 40px;
+  margin: 0 40px 40px 0;
 }
 
 .quiz-answer__checkbox {

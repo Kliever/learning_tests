@@ -6,7 +6,9 @@ let wrongAnswerCounter; // счетчик неправильных ответо�
 testBlockReloadBtn.addEventListener('click', () => {
   correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
   incorrectAnswerBlock.innerText = wrongAnswerCounter = 0;
+  //Прверка на администратора
   startQuiz(taskArrey);
+
   testBlockReloadBtn.classList.remove('_visible');
 })
 
@@ -17,8 +19,16 @@ function startQuiz(quizFiles) {
   answeredQuizBlock.innerHTML = currentQuestion;
   //Добавляет на страницу общее количество вопросов 
   totalQuizBlock.innerHTML = `${quizFiles.length}`
+
+
   //Вывод вопросов и вариантов ответа на страницу
-  listOfQuestionsNumbers = randomCicle(quizFiles.length);//Перемешивание вопросов
+  if (admin) {
+    //Обычная последовательность вопросов
+    listOfQuestionsNumbers = [+questionNumber.value - 1];
+  } else {
+    //Перемешивание вопросов
+    listOfQuestionsNumbers = randomCicle(quizFiles.length);
+  }
   outputQuizAndAnswers(quizFiles, listOfQuestionsNumbers);
 }
 
@@ -46,6 +56,10 @@ function outputQuizAndAnswers(quizFile, questionsArrey) {
 
   //Определение и вывод рандомного вопроса в HTML
   let questionNumber = questionsArrey[questionsArrey.length - 1];
+  //Вывод порядкового номера задания для админов
+  if (admin) {
+    quizBlockSerialNumber.innerHTML = `Порядковый номер вопроса: ${quizFile[questionNumber]["number"]}`;
+  }
   questionQuizArea.innerHTML = `${quizFile[questionNumber]["question"]}`;
   //Вывод ответов в HTML
   let listOfAnswersNumbers = randomCicle(quizFile[questionNumber]["answers"].length) //перемешивание ответов в рандомном порядке

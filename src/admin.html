@@ -1,9 +1,9 @@
 @@include('../src/assets/html/main-modules/head.html', {
-  "title": "Тестирование",
+  "title": "Страница администратора",
   "styleHref": "css/style.css",
   })
   
-  <body>
+  <body class="_admin">
     <div class="wrapper">
       @@include('../src/assets/html/main-modules/header.html', {})
       <main class="main">
@@ -29,6 +29,10 @@
                   <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item"
                     data-type="CSS">CSS</button>
                 </div>
+                <label class="start-block__number-of-question-label">
+                  Введите порядковый номер задания
+                  <input type="number" class="start-block__number-of-question input-number">
+                </label>
                 <button type="button" class="start-block__start-btn">Начать</button>
               </div>
   
@@ -48,6 +52,9 @@
                       </div>
                     </div>
                     <div class="quiz-block__info">
+                      <div class="quiz-block__info-num-question">
+                        Порядковый номер задания
+                      </div>
                       <div class="quiz-block__info-questions">
                         Вопрос
                         <span class="quiz-block__info-questions-answered info-questions-answered"></span>
@@ -77,6 +84,9 @@
               <div class="questions-block">
                 <div class="questions-block__inner">
                   <div class="questions-block__info">
+                    <div class="questions-block__info-num-question">
+                      Порядковый номер задания
+                    </div>
                     <div class="questions-block__info-questions">
                       Вопрос
                       <span class="questions-block__info-questions-answered info-questions-answered"></span>

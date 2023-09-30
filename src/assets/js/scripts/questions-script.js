@@ -18,7 +18,14 @@ function startQuestions(questionsFiles) {
   //Добавляет на страницу общее количество вопросов 
   totalQuestionsBlock.innerHTML = `${questionsFiles.length}`;
   //Вывод вопросов на страницу
-  listOfQuestionsNumbers = randomCicle(questionsFiles.length); //перемешивание вопросов в рандомном порядке
+
+  if (admin) {
+    //Обычная последовательность вопросов
+    listOfQuestionsNumbers = [+questionNumber.value - 1];
+  } else {
+    //перемешивание вопросов в рандомном порядке
+    listOfQuestionsNumbers = randomCicle(questionsFiles.length);
+  }
   outputQuestions(questionsFiles, listOfQuestionsNumbers)
 }
 
@@ -50,6 +57,12 @@ questionsNextBtn.addEventListener('click', () => {
 //Функция определения и вывода рандомного вопроса в HTML
 function outputQuestions(questionsFile, questionsArrey) {
   let questionNumber = questionsArrey[questionsArrey.length - 1];
+
+  //Вывод порядкового номера задания для админов
+  if (admin) {
+    answeredBlockSerialNumber.innerHTML = `Порядковый номер вопроса: ${questionsFile[questionNumber]["number"]}`;
+  }
+
   questionArea.innerHTML = `${questionsFile[questionNumber]["question"]}`;
 }
 //Ыункция вывода ответа на вопрос

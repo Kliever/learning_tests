@@ -1,3 +1,4 @@
+const body = document.querySelector('body');
 const startBlock = document.querySelector('.start-block');
 const startBtn = document.querySelector('.start-block__start-btn');
 const typesOfTasks = document.querySelector('.js-types-of-tasks');
@@ -17,6 +18,7 @@ testBlockReloadBtn.disabled = true;
 const testBlockResultsTitle = document.querySelector('.quiz-block__results-title');
 const testBlockResultsDescr = document.querySelector('.quiz-block__results-descr');
 const testBlockResultsLink = document.querySelector('.quiz-block__results-link');
+const quizBlockSerialNumber = document.querySelector('.quiz-block__info-num-question');
 const answeredQuizBlock = document.querySelector('.quiz-block__info-questions-answered');
 const totalQuizBlock = document.querySelector('.quiz-block__info-questions-total');
 const correctAnswerBlock = document.querySelector('.quiz-block__info-correct-answer-count');
@@ -26,6 +28,7 @@ const loadingBlock = document.querySelector('.loading');
 
 //questions block
 const questionsBlock = document.querySelector('.questions-block');
+const answeredBlockSerialNumber = document.querySelector('.questions-block__info-num-question');
 const answeredQuestionsBlock = document.querySelector('.questions-block__info-questions-answered');
 const totalQuestionsBlock = document.querySelector('.questions-block__info-questions-total');
 const questionArea = document.querySelector('.questions-block__question');
@@ -34,6 +37,10 @@ const questionsResultLink = document.querySelector('.questions-block__results-li
 const resultQuestionsBtn = document.querySelector('.questions-block__answer-btn');
 const questionsNextBtn = document.querySelector('.questions-block__next-btn');
 const questionsReloadBtn = document.querySelector('.questions-block__reload-btn');
+
+//admin-block
+const admin = body.classList.contains('_admin');
+const questionNumber = document.querySelector('.start-block__number-of-question');
 
 // Глобальные переменные
 let listOfQuestionsNumbers; //вопросы в перемешанном виде

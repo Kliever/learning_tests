@@ -29,6 +29,7 @@ startBtn.addEventListener('click', () => {
     correctAnswerBlock.innerText = counterOfCorrectAnswers = 0;
     incorrectAnswerBlock.innerText = wrongAnswerCounter = 0;
     startQuiz(taskArrey);
+
   } else if (questions) {
     typesOfQuestions.forEach((typesOfQuestion) => {
       if (typesOfQuestion === 'juniorJs') {
