@@ -1,6 +1,7 @@
 {
   "Test": [
     {
+      "number": "1",
       "question": "Какое ключевое слово используется для объявления переменных, видимых только внутри блока, в котором они объявлены?",
       "explanation": "Директива let объявляет переменную с блочной областью видимости с возможностью инициализировать её значением.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
@@ -24,6 +25,7 @@
       ]
     },
     {
+      "number": "2",
       "question": "Какую область видимости имеет переменная, объявленная с помощью let?",
       "explanation": "Директива let объявляет переменную с блочной областью видимости с возможностью инициализировать её значением.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
@@ -47,6 +49,7 @@
       ]
     },
     {
+      "number": "3",
       "question": "Что произойдет, если попытаться переопределить переменную, объявленную с помощью const?",
       "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
@@ -70,6 +73,7 @@
       ]
     },
     {
+      "number": "4",
       "question": "Какая из следующих переменных может быть объявлена с помощью const?",
       "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
@@ -93,6 +97,7 @@
       ]
     },
     {
+      "number": "5",
       "question": "Какая из следующих переменных не может быть переопределена после объявления?",
       "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
@@ -116,6 +121,7 @@
       ]
     },
     {
+      "number": "6",
       "question": "Какой метод массива используется для удаления элементов по индексу?",
       "explanation": "Метод splice() изменяет содержимое массива, удаляя существующие элементы и/или добавляя новые.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/splice",
@@ -139,6 +145,7 @@
       ]
     },
     {
+      "number": "7",
       "question": "Какой оператор используется для инкремента значения переменной на 1?",
       "explanation": "Инкремент (++) - Унарный оператор. Добавляет единицу к своему операнду. Если используется в качестве префикса (++x), то возвращает значение операнда с добавленной к нему единицей; а в случае применения в качестве окончания (x++) возвращает значение операнда перед добавлением к нему единицы.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators#арифметические_операторы",
@@ -162,6 +169,7 @@
       ]
     },
     {
+      "number": "8",
       "question": "Какой метод массива используется для сортировки элементов?",
       "explanation": "Метод sort() на месте сортирует элементы массива и возвращает отсортированный массив. Сортировка не обязательно устойчива (англ.). Порядок сортировки по умолчанию соответствует порядку кодовых точек Unicode.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort",
@@ -185,6 +193,7 @@
       ]
     },
     {
+      "number": "9",
       "question": "Какой метод строки используется для преобразования всех символов в верхний регистр?",
       "explanation": "Метод toUpperCase() возвращает значение строки, на которой он был вызван, преобразованное в верхний регистр.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase",
@@ -208,6 +217,7 @@
       ]
     },
     {
+      "number": "10",
       "question": "Какой метод используется для округления числа до ближайшего целого значения?",
       "explanation": "Метод Math.round() возвращает число, округлённое к ближайшему целому.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/round",
@@ -231,6 +241,7 @@
       ]
     },
     {
+      "number": "11",
       "question": "Что означает ключевое слово this в контексте объекта?",
       "explanation": "Поведение ключевого слова this в JavaScript несколько отличается по сравнению с остальными языками. Имеются также различия при использовании this в строгом и нестрогом режиме.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this",
@@ -254,6 +265,7 @@
       ]
     },
     {
+      "number": "12",
       "question": "Какой метод используется для преобразования строки в число с плавающей точкой?",
       "explanation": "Функция parseFloat() принимает строку в качестве аргумента и возвращает десятичное число (число с плавающей точкой)",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat",
@@ -277,6 +289,7 @@
       ]
     },
     {
+      "number": "13",
       "question": "Какой метод строки используется для поиска подстроки в строке?",
       "explanation": "Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
@@ -300,6 +313,7 @@
       ]
     },
     {
+      "number": "14",
       "question": "Какой объект позволяет выполнять операции с датами и временем?",
       "explanation": "Создаёт экземпляр объекта Date, представляющего собой момент времени. Объект Дата содержит число миллисекунд прошедших с 1 января 1970 г. UTC",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date",
@@ -323,6 +337,7 @@
       ]
     },
     {
+      "number": "15",
       "question": "Что вернет метод indexOf() если элемент не найден в массиве?",
       "explanation": "Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf",
@@ -346,6 +361,7 @@
       ]
     },
     {
+      "number": "16",
       "question": "Какой результат вычисления выражения Math.max(2, 7, 5, 10)?",
       "explanation": "Метод Math.max() возвращает наибольшее из нуля или более чисел.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/max",
@@ -369,6 +385,7 @@
       ]
     },
     {
+      "number": "17",
       "question": "Что делает оператор 'typeof'?",
       "explanation": "Оператор typeof возвращает строку, указывающую тип операнда.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof",
@@ -392,6 +409,7 @@
       ]
     },
     {
+      "number": "18",
       "question": "Каким образом объявляется функция в JavaScript?",
       "explanation": "Объявление функции определяет функцию с указанными аргументами. Также вы можете определять функции через конструктор Function или функциональное выражение.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function",
@@ -415,6 +433,7 @@
       ]
     },
     {
+      "number": "19",
       "question": "Какой метод используется для добавления нового элемента в конец массива?",
       "explanation": "Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
@@ -438,6 +457,7 @@
       ]
     },
     {
+      "number": "20",
       "question": "Какой оператор используется для строгого сравнения по значению и типу?",
       "explanation": "Строго равно (===) - Возвращает true, если операнды равны и имеют одинаковый тип",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
@@ -461,6 +481,7 @@
       ]
     },
     {
+      "number": "21",
       "question": "Какой метод используется для объявления переменной?",
       "explanation": "Директива let объявляет переменную с блочной областью видимости с возможностью инициализировать её значением.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
@@ -484,6 +505,7 @@
       ]
     },
     {
+      "number": "22",
       "question": "Какие ключевые слова используются в JavaScript для того, чтобы объявить переменную?",
       "explanation": "",
       "link": "https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/Variables",
@@ -507,6 +529,7 @@
       ]
     },
     {
+      "number": "23",
       "question": "Функция это —",
       "explanation": "В JavaScript функции являются объектами первого класса, то есть: они являются объектами и с ними можно взаимодействовать и передавать их точно так же как любой другой объект",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions",
@@ -530,6 +553,7 @@
       ]
     },
     {
+      "number": "24",
       "question": "Какие типы данных в JS являются примитивами?",
       "explanation": "Примитив (значение примитивного типа, примитивный тип данных) это данные, которые не являются объектом и не имеют методов. В JavaScript 7 простых типов данных: string, number, boolean, null, undefined, symbol (новое в ECMAScript 2015), bigint.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures",
@@ -553,6 +577,7 @@
       ]
     },
     {
+      "number": "25",
       "question": "Какого типа данных нет в JS?",
       "explanation": "JavaScript является слабо типизированным или динамическим языком. Это значит, что вам не нужно определять тип переменной заранее. Тип определится автоматически во время выполнения программы. Также это значит, что вы можете использовать одну переменную для хранения данных различных типов",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures",
@@ -580,6 +605,7 @@
       ]
     },
     {
+      "number": "26",
       "question": "Как объявить пустой массив в JavaScript?",
       "explanation": "Массивы создаются из квадратных скобок , которые содержат список элементов, разделённых запятыми.",
       "link": "https://developer.mozilla.org/ru/docs/Learn/JavaScript/First_steps/Arrays",
@@ -603,6 +629,7 @@
       ]
     },
     {
+      "number": "27",
       "question": "Как конвертировать итерируемый объект в массив?",
       "explanation": "Метод Array.from() создаёт новый экземпляр Array из массивоподобного или итерируемого объекта.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/from",
@@ -626,6 +653,7 @@
       ]
     },
     {
+      "number": "28",
       "question": "Как разбить строку на массив по заданному разделителю?",
       "explanation": "Метод split() разбивает объект String на массив строк путём разделения строки указанной подстрокой.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/split",
@@ -649,6 +677,7 @@
       ]
     },
     {
+      "number": "29",
       "question": "Метод JSON.stringify() преобразует...",
       "explanation": "Метод JSON.stringify() возвращает JavaScript-значение, преобразованное в JSON-строку. Возможна замена значений, если как replacer передана функция, или включение только определённых свойств, если как replacer указан массив.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
@@ -668,6 +697,7 @@
       ]
     },
     {
+      "number": "30",
       "question": "Стрелочные функции не имеют...",
       "explanation": "Выражения стрелочных функций имеют более короткий синтаксис по сравнению с функциональными выражениями и лексически привязаны к значению this (но не привязаны к собственному this, arguments, super, или new.target). Выражение стрелочных функций не позволяют задавать имя, поэтому стрелочные функции анонимны, если их ни к чему не присвоить.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions",
@@ -687,6 +717,7 @@
       ]
     },
     {
+      "number": "31",
       "question": "Какие циклы есть в языке JavaScript?",
       "explanation": "Операторы предназначенные для организации циклов в JavaScript: for, do...while, while",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration",
@@ -710,6 +741,7 @@
       ]
     },
     {
+      "number": "32",
       "question": "Какой метод преобразует значение JavaScript в строку JSON?",
       "explanation": "Метод JSON.stringify() возвращает JavaScript-значение, преобразованное в JSON-строку.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify",
@@ -733,6 +765,7 @@
       ]
     },
     {
+      "number": "33",
       "question": "Выберите метод JavaScript позволяющий выполнять произвольный код через заданные промежутки времени:",
       "explanation": "Метод setInterval() предложен для Window и Worker интерфейсов. Он циклически вызывает функцию или участок кода с фиксированной паузой между каждым вызовом. Уникальный идентификатор intervalID, возвращаемый методом, позволяет впоследствии удалить запущенный setInterval c помощью clearInterval()",
       "link": "https://developer.mozilla.org/ru/docs/Web/API/setInterval",
@@ -756,6 +789,7 @@
       ]
     },
     {
+      "number": "34",
       "question": "Какая функция добавляет один или больше элементов в конец массива и возвращает новую длину этого же массива?",
       "explanation": "Метод push() добавляет один или более элементов в конец массива и возвращает новую длину массива.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push",
@@ -779,6 +813,7 @@
       ]
     },
     {
+      "number": "35",
       "question": "Сколько параметров можно передать функции?",
       "explanation": "",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Functions",
@@ -802,6 +837,7 @@
       ]
     },
     {
+      "number": "36",
       "question": "Что такое замыкание (closure) в JavaScript?",
       "explanation": "Замыкание — это комбинация функции и лексического окружения, в котором эта функция была определена. Другими словами, замыкание даёт вам доступ к внешней функции из внутренней функции. В JavaScript замыкания создаются каждый раз при создании функции, во время её создания.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Closures",
@@ -825,6 +861,7 @@
       ]
     },
     {
+      "number": "37",
       "question": "Какая из следующих конструкций создает объект в JavaScript?",
       "explanation": "",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_objects",
@@ -848,6 +885,7 @@
       ]
     },
     {
+      "number": "38",
       "question": "Какие конструкции для циклов есть в JavaScript?",
       "explanation": "Циклы - простой способ сделать какое-то действие несколько раз. Существуют три конструкции для создания циклов: for, while, do...while",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration",
@@ -867,6 +905,7 @@
       ]
     },
     {
+      "number": "39",
       "question": "Какая арифметическая операция приводит к ошибке в JavaScript?",
       "explanation": "К ошибке приведут операции инкремента/декремента (увеличение или уменьшение на единицу), если попытаться вызвать их не на переменной",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
@@ -894,6 +933,7 @@
       ]
     },
     {
+      "number": "40",
       "question": "Что делает оператор === ?",
       "explanation": "Возвращает true, если операнды равны и имеют одинаковый тип.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
@@ -917,6 +957,7 @@
       ]
     },
     {
+      "number": "41",
       "question": "Что относится к функциональной области видимости?",
       "explanation": "Функциональная область видимости — это область видимости в пределах тела функции. Можно сказать, что она ограничена { и } функции. К переменной b есть доступ только внутри функции scoped . Функциональная область видимости — очень мощный инструмент для разделения кода.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let",
@@ -936,6 +977,7 @@
       ]
     },
     {
+      "number": "42",
       "question": "Каково будет значение переменной i после выполнения приведенного JavaScript кода? var i = 1; while (i <= 2) { i+=5; }",
       "explanation": "Выражение do...while создаёт цикл, который выполняет указанное выражение до тех пор, пока условие не станет ложным. Условие проверяется после выполнения выражения, то есть выражение выполнится как минимум один раз.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while",
@@ -955,6 +997,7 @@
       ]
     },
     {
+      "number": "43",
       "question": "Каково будет значение переменной j после выполнения приведенного JavaScript кода? var j = 0; for (var i = 0; i < 2; i++) { j=i; }",
       "explanation": "Оператор for создаёт цикл, состоящий из трех необязательных выражений, заключенных в круглые скобки и разделенных точкой с запятой, за которыми следует инструкция (часто блок инструкций), которая должна выполняться в цикле.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for",
@@ -974,6 +1017,7 @@
       ]
     },
     {
+      "number": "44",
       "question": "Какое значение будет выведено в результате выполнения скрипта? var j = 0; for (var i = 0; i <= 10; i++); { j += 1; } document.write(j);",
       "explanation": "Блок { j += 1; } не относится к циклу for, так как отделен от него точкой с запятой",
       "link": "",
@@ -997,6 +1041,7 @@
       ]
     },
     {
+      "number": "45",
       "question": "Каково будет значение переменной i после выполнения приведенного JavaScript кода? var i = 0; while (i <= 10) { i+=5; }",
       "explanation": "",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while",
@@ -1020,254 +1065,3657 @@
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "46",
+      "question": "Какое из следующих утверждений верное относительно области видимости переменных, объявленных с использованием const?",
+      "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "Перменные const имеют блочную область видимости, ограниченную телом юлижайшей функции или блока кода",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "Переменные const имеют глобальную область видимости",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "Переменные const имеют функциональную область видимости, ограниченную телом ближайшей функции",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "Переменные const имеют область видимости, ограниченную телом скрипта",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "47",
+      "question": "Что вернет число 0, приведенное к типу Boolean в JavaScript?",
+      "explanation": "Логическое преобразование самое простое. Происходит в логических операциях (позже мы познакомимся с условными проверками и подобными конструкциями), но также может быть выполнено явно с помощью функции Boolean(value). Правило преобразования: Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false. Все остальные значения становятся true.",
+      "link": "",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "false",
           "status": "true"
         },
         {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
+          "answer": "true",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "48",
+      "question": "Что вернет строка '0', приведенная к типу Boolean в JavaScript?",
+      "explanation": "Логическое преобразование самое простое. Происходит в логических операциях (позже мы познакомимся с условными проверками и подобными конструкциями), но также может быть выполнено явно с помощью функции Boolean(value). Правило преобразования: Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false. Все остальные значения становятся true.",
+      "link": "",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "true",
           "status": "true"
         },
         {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
+          "answer": "false",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "49",
+      "question": "Что вернет пустая строка '', приведенная к типу Boolean в JavaScript?",
+      "explanation": "Логическое преобразование самое простое. Происходит в логических операциях (позже мы познакомимся с условными проверками и подобными конструкциями), но также может быть выполнено явно с помощью функции Boolean(value). Правило преобразования: Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false. Все остальные значения становятся true.",
+      "link": "",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "false",
           "status": "true"
         },
         {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
+          "answer": "true",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "50",
+      "question": "Что вернет строка с пробелом ' ', приведенная к типу Boolean в JavaScript?",
+      "explanation": "Логическое преобразование самое простое. Происходит в логических операциях (позже мы познакомимся с условными проверками и подобными конструкциями), но также может быть выполнено явно с помощью функции Boolean(value). Правило преобразования: Значения, которые интуитивно «пустые», вроде 0, пустой строки, null, undefined и NaN, становятся false. Все остальные значения становятся true.",
+      "link": "",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "true",
           "status": "true"
         },
         {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
-          "status": "false"
-        },
-        {
-          "answer": "Answer",
+          "answer": "false",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "51",
+      "question": "Какой результат выражения 1 + 2 правильный в JavaScrypt?",
+      "explanation": "При сложении чисел они складываются по правилам математики. Number + Number -> addition",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "3",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "'12'",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "'1' '+' '2'",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "'1+2'",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "52",
+      "question": "Какой результат выражения true + 1 правильный в JavaScrypt?",
+      "explanation": "При сложении булевого значения с числом, первое преобразовывается в число (1 для true, 2 для false)",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "2",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "'true + 1'",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "1",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Выдаст ошибку",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "53",
+      "question": "Какой результат выражения false + false правильный в JavaScrypt?",
+      "explanation": "При сложении булевых значений, оба значения приводятся к типу number (1 для true, 2 для false)",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "0",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "'false + false'",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "false",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "Выдаст ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "2",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "54",
+      "question": "Какой результат выражения 1 + '1' правильный в JavaScrypt?",
+      "explanation": "При выполнении операции сложения, если хотя бы один операнд является строкой, все остальные операнды преобразовываются в строку и конечный результат также будет строкой.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "'11'",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "NaN",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "2",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "Будет ошибка",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "55",
+      "question": "Какой результат выражения 1 + 1 + '1' правильный в JavaScrypt?",
+      "explanation": "При выполнении операции сложения, если хотя бы один операнд является строкой, все остальные операнды преобразовываются в строку и конечный результат также будет строкой. При этом операции до первой строки выполняются, как обычно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "'21'",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "3",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "'111'",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "Будет ошибка",
+          "status": "false"
+        },
+        {
+          "answer": "NaN",
           "status": "false"
         }
       ]
     },
     {
-      "question": "Question",
-      "explanation": "explanation",
-      "link": "link",
+      "number": "56",
+      "question": "Какой результат выражения 1 + '1' + 1 правильный в JavaScrypt?",
+      "explanation": "При выполнении операции сложения, если хотя бы один операнд является строкой, все остальные операнды преобразовываются в строку и конечный результат также будет строкой. При этом операции до первой строки выполняются, как обычно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
       "answers": [
         {
-          "answer": "Answer",
+          "answer": "'111'",
           "status": "true"
         },
         {
-          "answer": "Answer",
+          "answer": "111",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "3",
           "status": "false"
         },
         {
-          "answer": "Answer",
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Будет ошибка",
+          "status": "false"
+        },
+        {
+          "answer": "'21'",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "57",
+      "question": "Какой результат выражения 25 - '5' правильный в JavaScrypt?",
+      "explanation": "Арифметические операторы, кроме сложения, работают только с числами и пытаются привести все операнды к числам. Если это не удается сделать, результатом выражения будет NaN",
+      "link": "",
+      "answers": [
+        {
+          "answer": "20",
+          "status": "true"
+        },
+        {
+          "answer": "'255'",
+          "status": "false"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "58",
+      "question": "Какой результат выражения 'foo' + false правильный в JavaScrypt?",
+      "explanation": "При выполнении операции сложения, если хотя бы один операнд является строкой, все остальные операнды преобразовываются в строку и конечный результат также будет строкой. При этом операции до первой строки выполняются, как обычно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition",
+      "answers": [
+        {
+          "answer": "'foofalse'",
+          "status": "true"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "'foo1'",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "59",
+      "question": "Какой результат выражения 10 * '80' правильный в JavaScrypt?",
+      "explanation": "Арифметические операторы, кроме сложения, работают только с числами и пытаются привести все операнды к числам. Если это не удается сделать, результатом выражения будет NaN",
+      "link": "",
+      "answers": [
+        {
+          "answer": "800",
+          "status": "true"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "'1080'",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "60",
+      "question": "Какой результат выражения 3 * 'Николай' правильный в JavaScrypt?",
+      "explanation": "Арифметические операторы, кроме сложения, работают только с числами и пытаются привести все операнды к числам. Если это не удается сделать, результатом выражения будет NaN",
+      "link": "",
+      "answers": [
+        {
+          "answer": "NaN",
+          "status": "true"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "'НиколайНиколайНиколай'",
+          "status": "false"
+        },
+        {
+          "answer": "3Николай",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "61",
+      "question": "Какой результат выражения +true правильный в JavaScrypt?",
+      "explanation": "Унарный оператор сложения пытается преобразовать операнд в число.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "1",
+          "status": "true"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        },
+        {
+          "answer": "'+true'",
+          "status": "false"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "62",
+      "question": "Какой результат выражения +false правильный в JavaScrypt?",
+      "explanation": "Унарный оператор сложения пытается преобразовать операнд в число.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "0",
+          "status": "true"
+        },
+        {
+          "answer": "1",
+          "status": "false"
+        },
+        {
+          "answer": "'+false'",
+          "status": "false"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "63",
+      "question": "Какой результат выражения 2++ правильный в JavaScrypt?",
+      "explanation": "Инкремент и декремент можно применять только к переменным. Попытка применения их к числам вызовет ошибку.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "Вызовет ошибку",
+          "status": "true"
+        },
+        {
+          "answer": "3",
+          "status": "false"
+        },
+        {
+          "answer": "2",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "64",
+      "question": "Какое значение будет присвоено переменной counter, если есть выражение let counter = (8 + 2, 7 + 5); в JavaScrypt?",
+      "explanation": "Запятая предоставляет возможность вычислять несколько выражений, разделяя их. Выполняется каждое выражение, но возвращается результат только последнего. Данный оператор в основном используется внутри цикла for, что позволяет при каждом прохождении цикла одновременно обновлять значения нескольких переменных.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators",
+      "answers": [
+        {
+          "answer": "12",
+          "status": "true"
+        },
+        {
+          "answer": "10",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "'(8 + 2, 7 + 5)'",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "65",
+      "question": "Какой результат выражения 'R' > 'T' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "66",
+      "question": "Какой результат выражения 'С' > 'V' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "67",
+      "question": "Какой результат выражения 'R' > 'r' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "68",
+      "question": "Какой результат выражения 'радиатор' > 'Радиация' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "69",
+      "question": "Какой результат выражения 'Зеленый' > 'озеленение' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "70",
+      "question": "Какой результат выражения 'реле' > 'Рело' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "71",
+      "question": "Какой результат выражения '58' > 10 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "72",
+      "question": "Какой результат выражения 13 > '17' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "73",
+      "question": "Какой результат выражения '13' > '013' будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false).",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "74",
+      "question": "Какой результат выражения '007' > 7 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "75",
+      "question": "Какой результат выражения '007' == 7 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "76",
+      "question": "Какой результат выражения true == 1 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "77",
+      "question": "Какой результат выражения false == 1 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "78",
+      "question": "Какой результат выражения false == 0 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "79",
+      "question": "Какой результат выражения '0' == 0 будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "80",
+      "question": "Какой результат выражения let a = 0; Boolean(a); будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "81",
+      "question": "Какой результат выражения let a = 1; Boolean(a); будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "При сравнении разных типов данных они приводятся к единому типу - числовому.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "82",
+      "question": "Какой результат выражения 'true' == true; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Результатом такого выражения будет false. Так как оба операнда отличаются по типу, для их сравнения они оба приводятся к числу. Строка 'true' в этом случае даст NaN, а булево значение true станет числом 1. NaN не равно 1",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "83",
+      "question": "Какой результат выражения 'false' == false; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Результатом такого выражения будет false. Так как оба операнда отличаются по типу, для их сравнения они оба приводятся к числу. Строка 'false' в этом случае даст NaN, а булево значение false станет числом 0. NaN не равно 0",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "84",
+      "question": "Какой результат выражения '0' === false; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Оператор === сравнивает без приведения типов, то есть, буквально",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "85",
+      "question": "Какой результат выражения 0 === false; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Оператор === сравнивает без приведения типов, то есть, буквально",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "86",
+      "question": "Какой результат выражения 0 !== false; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Оператор === сравнивает без приведения типов, то есть, буквально",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "87",
+      "question": "Какой результат выражения null === undefined; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Оператор === сравнивает без приведения типов, то есть, буквально",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "88",
+      "question": "Какой результат выражения null == undefined; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "89",
+      "question": "Какой результат выражения null == 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "90",
+      "question": "Какой результат выражения undefined == 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "91",
+      "question": "Какой результат выражения null > 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt. Соответственно, при сравнении его с чем либо, кроме null и undefined выражение всегда даст false.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "92",
+      "question": "Какой результат выражения null == 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt. Соответственно, при сравнении его с чем либо, кроме null и undefined выражение всегда даст false.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "93",
+      "question": "Какой результат выражения null >= 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt. Однако существует особенность языка, согласно которому при сравнении операторами > или < аналогичное выражение с противоположными операторами <= и >= ватоматически даст противоположный результат. Это один из способов сэкономить ресурсы при вычислении. Так, например, 8 < 9 даст true, за счет чего 8 >= 9 даст false автоматически, что сэкономит ресурсы вычисления. null > 0 это false, значит автоматически null <= 0 даст true.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "94",
+      "question": "Какой результат выражения null > 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt. Однако существует особенность языка, согласно которому при сравнении операторами > или < аналогичное выражение с противоположными операторами <= и >= ватоматически даст противоположный результат. Это один из способов сэкономить ресурсы при вычислении. Так, например, 8 < 9 даст true, за счет чего 8 >= 9 даст false автоматически, что сэкономит ресурсы вычисления. null > 0 это false, значит автоматически null <= 0 даст true.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "95",
+      "question": "Какой результат выражения Boolean(null); будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Значение, переданное первым параметром, при необходимости преобразуется в логическое значение. Если значение опущено или равно 0, -0, null, false, NaN, undefined или пустой строке (''), объект имеет начальное значение, равное false. Все остальные значения, включая любые объекты или строку 'false', создают объект с начальным значением, равным true.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "96",
+      "question": "Какой результат выражения Number(null); будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Приводя null к численному типу данных оно всегда равно 0",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "answers": [
+        {
+          "answer": "0",
+          "status": "true"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "97",
+      "question": "Какой результат выражения Number(undefined); будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Undefined не может быть преобразован в число. При попытке преобразовать вернет NaN",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number",
+      "answers": [
+        {
+          "answer": "NaN",
+          "status": "true"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        },
+        {
+          "answer": "1",
+          "status": "false"
+        },
+        {
+          "answer": "Вернет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "98",
+      "question": "Какой результат выражения Boolean(undefined); будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Значение, переданное первым параметром, при необходимости преобразуется в логическое значение. Если значение опущено или равно 0, -0, null, false, NaN, undefined или пустой строке (''), объект имеет начальное значение, равное false. Все остальные значения, включая любые объекты или строку 'false', создают объект с начальным значением, равным true.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "99",
+      "question": "Какой результат выражения undefined > 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Результатом любого сравнения undefined с 0 будет false",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "100",
+      "question": "Какой результат выражения undefined == 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Результатом любого сравнения undefined с 0 будет false",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "101",
+      "question": "Какой результат выражения undefined >= 0; будет правильным в JavaScrypt? Объяснить, почему.",
+      "explanation": "Результатом любого сравнения undefined с 0 будет false",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "NaN",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "102",
+      "question": "В каком направлении происходит вычисление выражения с оператором или ( || ) в JavaScrypt?",
+      "explanation": "Операнды вычисляются слева направо.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "Слева направо",
+          "status": "true"
+        },
+        {
+          "answer": "Справа налево",
+          "status": "false"
+        },
+        {
+          "answer": "Впроизвольном порядке",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "103",
+      "question": "Какое значение вернет выражение 3 > 2 || 16 < 20 в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат true, так как оба сравнения преобразуются в булево значение и результатом второго будет true, а оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "3",
+          "status": "false"
+        },
+        {
+          "answer": "3 > 2",
+          "status": "false"
+        },
+        {
+          "answer": "16 < 20",
+          "status": "false"
+        },
+        {
+          "answer": "16",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "104",
+      "question": "Какое значение вернет выражение 10 > 7 || 13 < 14 в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат true, так как оба сравнения преобразуются в булево значение и результатом второго будет true, а оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "10 > 7",
+          "status": "false"
+        },
+        {
+          "answer": "13 < 14",
+          "status": "false"
+        },
+        {
+          "answer": "14",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "105",
+      "question": "Какое значение вернет выражение true || true в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат true, так как оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "106",
+      "question": "Какое значение вернет выражение false || true в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат true, так как оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "107",
+      "question": "Какое значение вернет выражение true || false в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат true, так как оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "108",
+      "question": "Какое значение вернет выражение false || false в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат false, так как оба false, а оператор || возвращает первое значение true, которое встретит, и прекращает свою работу, но в случае, если значение true не встречается вообще, возвращает последний false.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "109",
+      "question": "Какое значение вернет выражение 12 || 26 в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат 12, так как перед сравнением числа будут приведены к булевому типу, где и 12 и 26 станут true. Оператор 'или' остановит работу, как только встретит первое значение true и вернет его исходное значение. В данном случае это 12.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "12",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "26",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "110",
+      "question": "Какое значение вернет выражение 0 || 26 в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат 26, так как перед сравнением числа будут приведены к булевому типу, где 0 - это false, а 26 - это true. Оператор 'или' остановит работу, как только встретит первое значение true и вернет его исходное значение. В данном случае это 26.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "26",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "111",
+      "question": "Какое значение вернет выражение 0 || null в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат null, так как перед сравнением операнды будут приведены к булевому типу, где 0 и null - это false. Оператор 'или' остановит работу, как только встретит первое значение true и вернет его исходное значение. Если все операнды false, пернет исходное значение последнего из них, а это null.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "null",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "112",
+      "question": "Какое значение вернет выражение 0 || undefined в JavaScrypt? Объяснить выбор",
+      "explanation": "Результат undefined, так как перед сравнением операнды будут приведены к булевому типу, где 0 и undefined - это false. Оператор 'или' остановит работу, как только встретит первое значение true и вернет его исходное значение. Если все операнды false, пернет исходное значение последнего из них, а это undefined.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR",
+      "answers": [
+        {
+          "answer": "undefined",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "113",
+      "question": "Какое значение вернет выражение true && true в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "114",
+      "question": "Какое значение вернет выражение false && true в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "115",
+      "question": "Какое значение вернет выражение true && false в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "116",
+      "question": "Какое значение вернет выражение false && false в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "117",
+      "question": "Какое значение вернет выражение 36 && 18 в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "18",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "36",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "118",
+      "question": "Какое значение вернет выражение 0 && 18 в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "0",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "18",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "119",
+      "question": "Какое значение вернет выражение 18 && null в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "null",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "18",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "120",
+      "question": "Какое значение вернет выражение undefined && null в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "undefined",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "null",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "121",
+      "question": "Какое значение вернет выражение 36 && '' в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND",
+      "answers": [
+        {
+          "answer": "''",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "36",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "122",
+      "question": "Какое значение вернет выражение 1 && 0 || 2 && 3 в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && имеет приоритет выше, чем ||. Значит выражение можно преобразовать в true && false || true && true, а затем в false || true (0 || 3), где оператор || вернет 3",
+      "link": "",
+      "answers": [
+        {
+          "answer": "3",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "2",
+          "status": "false"
+        },
+        {
+          "answer": "1",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "123",
+      "question": "Какое значение вернет выражение 1 || 0 && 2 || 3 в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор && имеет приоритет выше, чем ||. Значит выражение можно преобразовать в true || false && true || true, а затем в true || false || true (1 || 0 || 3), где оператор || вернет 1",
+      "link": "",
+      "answers": [
+        {
+          "answer": "1",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        },
+        {
+          "answer": "2",
+          "status": "false"
+        },
+        {
+          "answer": "3",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "124",
+      "question": "Какое значение вернет выражение !true в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор ! (логическое не) в JavaScrypt сначала приводит операнды к логическому типу, а затем возвращает противоположное значение.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "125",
+      "question": "Какое значение вернет выражение !null в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор ! (логическое не) в JavaScrypt сначала приводит операнды к логическому типу, а затем возвращает противоположное значение.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "126",
+      "question": "Какое значение вернет выражение !1 в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор ! (логическое не) в JavaScrypt сначала приводит операнды к логическому типу, а затем возвращает противоположное значение.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "127",
+      "question": "Какое значение вернет выражение !'' в JavaScrypt (пустая строка)? Объяснить выбор",
+      "explanation": "Оператор ! (логическое не) в JavaScrypt сначала приводит операнды к логическому типу, а затем возвращает противоположное значение.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "answers": [
+        {
+          "answer": "true",
+          "status": "true"
+        },
+        {
+          "answer": "false",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "128",
+      "question": "Какое значение вернет выражение !'Эллинберг' в JavaScrypt? Объяснить выбор",
+      "explanation": "Оператор ! (логическое не) в JavaScrypt сначала приводит операнды к логическому типу, а затем возвращает противоположное значение.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "129",
+      "question": "Какое значение вернет выражение !true && 58 || 18 && !1 в JavaScrypt? Объяснить выбор",
+      "explanation": "Наивысший приоритет имеет ! (логическое не), затем идет && (логические и), а на последнем месте || (логическое или).",
+      "link": "",
+      "answers": [
+        {
+          "answer": "false",
+          "status": "true"
+        },
+        {
+          "answer": "true",
+          "status": "false"
+        },
+        {
+          "answer": "58",
+          "status": "false"
+        },
+        {
+          "answer": "18",
+          "status": "false"
+        },
+        {
+          "answer": "1",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "130",
+      "question": "Какое значение вернет указанное выражение в JavaScrypt? Объяснить выбор. <p>let name;</p><p>name ?? 'Без имени';</p>",
+      "explanation": "Выражение вернет значение 'Без имени', так как оператор сравнения с null (нулевого слияния) возвращает первый аргумент, если он не null и не undefined, иначе второй.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing",
+      "answers": [
+        {
+          "answer": "'Без имени'",
+          "status": "true"
+        },
+        {
+          "answer": "name",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "null",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "131",
+      "question": "Какое значение вернет указанное выражение в JavaScrypt? Объяснить выбор. <p>let name = 'Руслан';</p><p>name ?? 'Без имени';</p>",
+      "explanation": "Выражение вернет значение 'Руслан', так как оператор сравнения с null (нулевого слияния) возвращает первый аргумент, если он не null и не undefined, иначе второй.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing",
+      "answers": [
+        {
+          "answer": "'Руслан'",
+          "status": "true"
+        },
+        {
+          "answer": "'Без имени'",
+          "status": "false"
+        },
+        {
+          "answer": "null",
+          "status": "false"
+        },
+        {
+          "answer": "Вызовет ошибку",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "132",
+      "question": "Выполнится ли проивзольный код в JavaScrypt, если <p>if (2 + 1 === 3 && '1' == 1 || 10 > 5 && 10 === 1) {</p><p>'Произвольный код'</p><p>}</p>. Объяснить, почему.",
+      "explanation": "Код выполнится, так как выражение в скобках вернет true. ",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else",
+      "answers": [
+        {
+          "answer": "Выполнится",
+          "status": "true"
+        },
+        {
+          "answer": "Не выполнится",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "133",
+      "question": "Выполнится ли проивзольный код в JavaScrypt, если <p>if (2 + 4 === 3 && '1' == 1 || 10 > 5 && '1' === 1) {</p><p>'Произвольный код'</p><p>}</p>. Объяснить, почему.",
+      "explanation": "Код не выполнится, так как выражение в скобках вернет false. ",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else",
+      "answers": [
+        {
+          "answer": "Не выполнится",
+          "status": "true"
+        },
+        {
+          "answer": "Выполнится",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "134",
+      "question": "Выполнится ли проивзольный код в JavaScrypt, если <p>if (2 + 1 === 3 && null == 0 || 10 > 5 && '1' == 1) {</p><p>'Произвольный код'</p><p>}</p>. Объяснить, почему.",
+      "explanation": "Код выполнится, так как выражение в скобках вернет true. ",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else",
+      "answers": [
+        {
+          "answer": "Выполнится",
+          "status": "true"
+        },
+        {
+          "answer": "Не выполнится",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "135",
+      "question": "Выполнится ли проивзольный код в JavaScrypt, если <p>if (2 + 1 === 3 && null == undefined || 10 > 5 && '1' === 1) {</p><p>'Произвольный код'</p><p>}</p>. Объяснить, почему.",
+      "explanation": "Код выполнится, так как выражение в скобках вернет true. ",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else",
+      "answers": [
+        {
+          "answer": "Выполнится",
+          "status": "true"
+        },
+        {
+          "answer": "Не выполнится",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "136",
+      "question": "Можно ли использовать условный тернарный оператор в JavaScrypt для присвоения переменной значения?",
+      "explanation": "Можно. Пример: const elvisLives = Math.PI > 4 ? 'Да' : 'Нет'; В итоге переменной elvisLives присвоится значение 'Нет'",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Conditional_operator",
+      "answers": [
+        {
+          "answer": "Можно",
+          "status": "true"
+        },
+        {
+          "answer": "Нельзя",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "137",
+      "question": "Какое последнее значение переменной num будет выведено вконсоль JavaScrypt? <img src='assets/img/questions/juniorJsQuiz/137.jpg'>",
+      "explanation": "4, так как ее изменение происходит после вывода в консоль",
+      "link": "",
+      "answers": [
+        {
+          "answer": "4",
+          "status": "true"
+        },
+        {
+          "answer": "5",
+          "status": "false"
+        },
+        {
+          "answer": "6",
+          "status": "false"
+        },
+        {
+          "answer": "3",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "138",
+      "question": "Какое последнее значение переменной num будет выведено в консоль JavaScrypt? <img src='assets/img/questions/juniorJsQuiz/138.jpg'>",
+      "explanation": "5, так как ее изменение происходит перед выводом в консоль",
+      "link": "",
+      "answers": [
+        {
+          "answer": "5",
+          "status": "true"
+        },
+        {
+          "answer": "4",
+          "status": "false"
+        },
+        {
+          "answer": "6",
+          "status": "false"
+        },
+        {
+          "answer": "3",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "139",
+      "question": "Какое последнее значение переменной num будет выведено в консоль JavaScrypt? <img src='assets/img/questions/juniorJsQuiz/139.jpg'>",
+      "explanation": "0, так как цикл do...while используется тогда, когда нам необходимо выполнение тела цикла хотя бы 1 раз, независимо от того, вернет условия true или нет.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration#цикл_do...while",
+      "answers": [
+        {
+          "answer": "0",
+          "status": "true"
+        },
+        {
+          "answer": "1",
+          "status": "false"
+        },
+        {
+          "answer": "Выведет ошибку",
+          "status": "false"
+        },
+        {
+          "answer": "-1",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "140",
+      "question": "Какое последнее значение переменной num будет выведено в консоль JavaScrypt? <img src='assets/img/questions/juniorJsQuiz/140.jpg'>",
+      "explanation": "4, так как изменение переменной num происходит после ее вывода в консоль",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration#цикл_do...while",
+      "answers": [
+        {
+          "answer": "4",
+          "status": "true"
+        },
+        {
+          "answer": "5",
+          "status": "false"
+        },
+        {
+          "answer": "6",
+          "status": "false"
+        },
+        {
+          "answer": "0",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "141",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "142",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "143",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "144",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "145",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "146",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "147",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "148",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "149",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "150",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "151",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "152",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "153",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "154",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "155",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "156",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "157",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "158",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "159",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "160",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "161",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "162",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "163",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "164",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "165",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "166",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "167",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "168",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "169",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "170",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "171",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "172",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "173",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "174",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "175",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "176",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "177",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "178",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "179",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "180",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "181",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "182",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "183",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "184",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "185",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "186",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "187",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "188",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "189",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "190",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "191",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "192",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "193",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "194",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "195",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "196",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "197",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "198",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "199",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "200",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "201",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "202",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "203",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "204",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "205",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "206",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "207",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "208",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "209",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "210",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "211",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "212",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        }
+      ]
+    },
+    {
+      "number": "213",
+      "question": "",
+      "explanation": "",
+      "link": "",
+      "answers": [
+        {
+          "answer": "",
+          "status": "true"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
+          "status": "false"
+        },
+        {
+          "answer": "",
           "status": "false"
         }
       ]

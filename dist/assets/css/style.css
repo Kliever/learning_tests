@@ -1513,6 +1513,9 @@ body {
 .results-descr {
   margin-bottom: 20px;
 }
+.results-descr img {
+  margin: 20px 0;
+}
 
 .header__top {
   position: relative;
