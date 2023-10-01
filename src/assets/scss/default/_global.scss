@@ -3,6 +3,20 @@ body {
   line-height: 1.5;
   color: #4b4b4b;
   font-family: 'Roboto';
+  @media (max-width: 1000px) {
+    font-size: 18px;
+  }
+}
+
+img{
+  max-width: 100%;
+  width: auto;
+  margin: 20px 0;
+}
+
+i{
+  background: #4b4b4b;
+  color: #fff;
 }
 
 .wrapper {
@@ -50,10 +64,24 @@ body {
   }
 }
 
+.questions{
+  font-size: 27px;
+  line-height: 1.5;
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
+}
+
 .main-title {
   text-align: center;
   font-size: 50px;
   text-transform: uppercase;
+  @media (max-width: 1000px) {
+    font-size: 40px;
+  }
+  @media (max-width: 600px) {
+    font-size: 24px;
+  }
 }
 
 .text {
@@ -63,6 +91,9 @@ body {
 .question {
   font-size: 34px;
   line-height: 1.2;
+  @media (max-width: 1000px) {
+    font-size: 24px;
+  }
 }
 
 // checkbox-------------------
@@ -155,6 +186,9 @@ body {
       box-shadow: none;
     }
   }
+  @media (max-width: 500px) {
+    width: 100%;
+  }
 }
 
 .switch-btn {
@@ -162,7 +196,6 @@ body {
   border: 1px solid #4b4b4b;
   background: #fff;
   border-radius: 5px;
-
   @media (min-width: 1024px) {
     &:hover {
       box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.75);

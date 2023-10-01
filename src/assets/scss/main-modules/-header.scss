@@ -23,7 +23,8 @@
 
 .start-block__btns {
   display: flex;
-  column-gap: 10px;
+  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .header__quiz-btn {}
@@ -33,6 +34,7 @@
   position: relative;
   opacity: 0;
   visibility: hidden;
+  margin: 10px 0;
   &::after {
     content: '';
     position: absolute;
@@ -55,5 +57,17 @@
   &._visible{
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header__descr{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .header__descr{
+    font-size: 20px;
   }
 }
