@@ -3,7 +3,7 @@
     {
       "number" : "1",
       "question" : "Может ли JavaScript обрабатываться в системе без браузера? Если да, то каким образом?",
-      "explanation": "Да, При помощи платформы node.js, построенной на движке V8",
+      "explanation": "Да, При помощи платформы <i>node.js</i>, построенной на движке V8",
       "link": "https://nodejs.org/ru"
     },
     {
@@ -122,19 +122,19 @@
     },
     {
       "number" : "21",
-      "question" : "Какая область видимости переменных let в JavaScript?",
+      "question" : "Какая область видимости переменных <i>let</i> в JavaScript?",
       "explanation": "Блочная",
       "link": ""
     },
     {
       "number" : "22",
-      "question" : "Можно ли изменить значения констант const в JavaScript?",
+      "question" : "Можно ли изменить значения констант <i>const</i> в JavaScript?",
       "explanation": "Значение констант не может быть изменено новым присваиванием, а также не может быть переопределено. Константы (const) подчиняются области видимости уровня блока так же, как переменные, объявленные с использованием ключевого слова let. Изменять же можно лишь значения внутри некоторых типов. Например, попытка переопределить массив или объект вызовет ошибку, в то время как свойства объектов (ключи) изменять можно",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const"
     },
     {
       "number" : "23",
-      "question" : "В чем отличия var и let в JavaScript?",
+      "question" : "В чем отличия <i>var</i> и <i>let</i> в JavaScript?",
       "explanation": "В отличии от let, переменную, объявленную при помощи ключевого слова var можно использовать до объявления (независимо от наличия строгого режима). Область видимости var - функциональная, то есть переменная будет видна за пределами блока, но невидна за пределами функции, внутри которой она была объявлена.",
       "link": ""
     },
@@ -158,7 +158,7 @@
     },
     {
       "number" : "27",
-      "question" : "В каком случае typeof в JavaScript вернет undefined?",
+      "question" : "В каком случае <i>typeof</i> в JavaScript вернет <i>undefined</i>?",
       "explanation": "Переменная возвращает тип данных undefined, если она бы объявлена, но не определена (небыло присвоено никакого значения).",
       "link": ""
     },
@@ -170,31 +170,31 @@
     },
     {
       "number" : "29",
-      "question" : "Что означает значение Null переменной? Какой тип имеет переменная со значением Null в JavaScript?",
+      "question" : "Что означает значение <i>Null</i> переменной? Какой тип имеет переменная со значением <i>Null</i> в JavaScript?",
       "explanation": "Null - специальное значение, которое указывает, что переменная определена, но ее значение буквально 'ничего'. Тип переменной со значением Null - object. Это признанная ошибка, намеренно оставленная для сохранения совместимости. Значение null представляет отсутствие какого-либо объектного значения. В JavaScript, null является примитивом, и в контексте логических операций, рассматривается как ложное (falsy). В API, null часто присутствует в местах где ожидается объект, но подходящего объекта нет.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/null"
     },
     {
       "number" : "30",
-      "question" : "Какие цифровые значения, кроме, собственно, цифр и чисел, возвращают тип данных number в JavaScript?",
+      "question" : "Какие цифровые значения, кроме, собственно, цифр и чисел, возвращают тип данных <i>number</i> в JavaScript?",
       "explanation": "В JavaScript кроме чисел возвращают тип данных number также специальные числовые значения Infinity, -Infinity и NaN (Not a Number)",
       "link": ""
     },
     {
       "number" : "31",
-      "question" : "Что такое Infinity и -Infinity в JavaScript и как его получить?",
+      "question" : "Что такое <i>Infinity</i> и <i>-Infinity</i> в JavaScript и как его получить?",
       "explanation": "В JavaScript Infinity - математическая бесконечность, значение, которое больше любого числа. Получить его можно разделив любое число на 0. -Infinity, соответственно, можно получить, разделив на 0 отрицательное значение. Тип данных Infinity и -Infinity - number.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Infinity"
     },
     {
       "number" : "32",
-      "question" : "Что такое NaN в JavaScript? Какой это тип данных, как получить?",
+      "question" : "Что такое <i>NaN</i> в JavaScript? Какой это тип данных, как получить?",
       "explanation": "NaN (Not a Number) - специальное числовое значение, означающее вычислительную ошибку. Это результат неправильной либо неопределенной математической операции. Тип данных NaN - number.",
       "link": ""
     },
     {
       "number" : "33",
-      "question" : "Что представляет собой тип данных BigInt (BigInteger) в JavaScript, зачем был введен и как его получить?",
+      "question" : "Что представляет собой тип данных <i>BigInt (BigInteger)</i> в JavaScript, зачем был введен и как его получить?",
       "explanation": "В JavaScript тип данных Number не может содержать числа больше 9007199254740991 и меньше -9007199254740991. Это техническое ограничение и связанно с представлением. Тип BigInt был введен, чтобы была возможность работать с целыми числами произвольной длины. Чтобы получить значение такого числа, необхдимо к числомову литералу добавить букву n. <img src='assets/img/questions/juniorJsQuestions/33.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/BigInt"
     },
@@ -212,7 +212,7 @@
     },
     {
       "number" : "36",
-      "question" : "Строковое преобразование в JavaScript. При помощи какой функции можно изменить тип данных на string?",
+      "question" : "Строковое преобразование в JavaScript. При помощи какой функции можно изменить тип данных на <i>string</i>?",
       "explanation": "Чтобы изменить тип данных на string, необходимо использовать функцию String(). <img src='assets/img/questions/juniorJsQuestions/36.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String"
     },
@@ -254,7 +254,7 @@
     },
     {
       "number" : "43",
-      "question" : "Что получится в результате сложения двух строк в JavaScript и почему? Например, 'Олег' + 'Рачко'",
+      "question" : "Что получится в результате сложения двух строк в JavaScript и почему? Например, <i>'Олег' + 'Рачко'</i>",
       "explanation": "На выходе получится строка 'ОлегРачко', состоящая из складываемых строк. При сложении строк они конкатенируются.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition"
     },
@@ -266,13 +266,13 @@
     },
     {
       "number" : "45",
-      "question" : "Что получится в результате сложения строки и числа в JavaScript и почему? Например, 'Олег' + 12",
+      "question" : "Что получится в результате сложения строки и числа в JavaScript и почему? Например, <i>'Олег' + 12</i>",
       "explanation": "Результат 'Олег12'. При выполнении операции сложения, если хотя бы один операнд является строкой, все остальные операнды преобразовываются в строку и конечный результат также будет строкой.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition"
     },
     {
       "number" : "46",
-      "question" : "Что получится в результате сложения нескольких строк и чисел в JavaScript и почему? Например, 16 + 12 +'Олег'",
+      "question" : "Что получится в результате сложения нескольких строк и чисел в JavaScript и почему? Например, <i>16 + 12 +'Олег'</i>",
       "explanation": "Результат '28Олег'. Присложении строк с числами последние приводятся к строкам, однако, все операции сложения до первой строки производятся обычно.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Addition"
     },
@@ -290,7 +290,7 @@
     },
     {
       "number" : "49",
-      "question" : "Можно ли присваивать значения переменным прямо внутри математического выражения, например 8 - (a = b - 3) в JavaScript?",
+      "question" : "Можно ли присваивать значения переменным прямо внутри математического выражения, например <i>8 - (a = b - 3)</i> в JavaScript?",
       "explanation": "Можно, однако делать так не рекомендуется из-за низкой читабельности кода",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators"
     },
@@ -320,7 +320,7 @@
     },
     {
       "number" : "54",
-      "question" : "Зачем используется оператор запятая (,) в JavaScript?",
+      "question" : "Зачем используется оператор запятая (<i>,</i>) в JavaScript?",
       "explanation": "Запятая предоставляет возможность вычислять несколько выражений, разделяя их. Выполняется каждое выражение, но возвращается результат только последнего. Данный оператор в основном используется внутри цикла for, что позволяет при каждом прохождении цикла одновременно обновлять значения нескольких переменных. <img src='assets/img/questions/juniorJsQuestions/54.jpg'> Например, если a является двумерным массивом, каждая строка которого содержит 10 элементов, то следующий код с использованием оператора запятая позволяет выполнять одновременное приращение двух переменных. Данный код выводит на экран значения диагональных элементов массива: <img src='assets/img/questions/juniorJsQuestions/54_1.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators"
     },
@@ -356,122 +356,122 @@
     },
     {
       "number" : "60",
-      "question" : "Какой результат выражения null == undefined; будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>null == undefined;</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат true, поскольку операнды null и undefined при нестрогом сравнении будут равны между собой и не равны больше ничему. Это специальное правило языка JavaScrypt.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness"
     },
     {
       "number" : "61",
-      "question" : "Какой результат выражения null === undefined; будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>null === undefined;</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат false, поскольку оператор === сравнивает без приведения типов, то есть, буквально.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness"
     },
     {
       "number" : "62",
-      "question" : "Как происхорди процесс работы оператора || (или) в JavaScrypt?",
+      "question" : "Как происхорди процесс работы оператора <i>||</i> (или) в JavaScrypt?",
       "explanation": "Операнды вычисляются слева направо. Происходит преобразование каждого операнда в логический тип. При первом же значении true работа оператора останавливается и возвращается исходное значение этого операнда. В случае, когда все операнды false, возвращается значение последнего из них",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "63",
-      "question" : "Какой результат выражения true || true будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>true || true</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат true, так как оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "64",
-      "question" : "Какой результат выражения false || true будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>false || true</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат true, так как оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "65",
-      "question" : "Какой результат выражения true || false будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>true || false</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат true, так как оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "66",
-      "question" : "Какой результат выражения false || false будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>false || false</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат false, так как оба false, а оператор || возвращает первое значение true, которое встретит, и прекращает свою работу, но в случае, если значение true не встречается вообще, возвращает последний false.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "67",
-      "question" : "Какой результат выражения 13 > 24 || 7 < 8 будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>13 > 24 || 7 < 8</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат true, так как оба сравнения преобразуются в булево значение и результатом второго будет true, а оператор || возвращает первое значение true, которое встретит, и прекращает свою работу.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "68",
-      "question" : "Какой результат выражения 13 > 24 || 7 < 6 будет правильным в JavaScrypt и почему?",
+      "question" : "Какой результат выражения <i>13 > 24 || 7 < 6</i> будет правильным в JavaScrypt и почему?",
       "explanation": "Результат false, так как оба сравнения преобразуются в булево значение и результатом их всех будет false, а оператор || возвращает первое значение true, которое встретит, и прекращает свою работу, но в случае, когда все сравнения false, возвращает последний из них.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "69",
-      "question" : "Какое значение будет присвоено переменной user в JavaScrypt и почему? Если <p>let userName = ''</p><p>let userNickName = 'Джаред'</p><p>let user = userName || userNickName || 'noName'</p>",
+      "question" : "Какое значение будет присвоено переменной user в JavaScrypt и почему?<img src='assets/img/questions/juniorJsQuestions/69.jpg'>",
       "explanation": "Переменной userName будет присвоено значение 'Джаред', потому что оператор || возвращает исходное значение первого встреченного операнда со значением true. ",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_OR"
     },
     {
       "number" : "70",
-      "question" : "Как происхорди процесс работы оператора && (и) в JavaScrypt?",
+      "question" : "Как происхорди процесс работы оператора <i>&&</i> (и) в JavaScrypt?",
       "explanation": "Оператор && (логическое и) вычисляет операндыслева направо, каждый из нихприводится к логическому типу. Если результат false, останавливается и возвращает исходное значение этого операнда. Если все операнды true, возвращает значение последнего",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_AND"
     },
     {
       "number" : "71",
-      "question" : "Какой оператор имеет бОльший приоритет: || (логическое или) или && (логическое и) в JavaScrypt?",
+      "question" : "Какой оператор имеет бОльший приоритет: <i>||</i> (логическое или) или <i>&&</i> (логическое и) в JavaScrypt?",
       "explanation": "Оператор && (логическое и) имеет приоритет выше, чем оператор || (логическое или), а значит выполняется раньше.",
       "link": ""
     },
     {
       "number" : "72",
-      "question" : "Оператор ! (логическое не) в JavaScrypt. Какие действия выполняет?",
+      "question" : "Оператор <i>!</i> (логическое не) в JavaScrypt. Какие действия выполняет?",
       "explanation": "Оператор ! (логическое не) в JavaScrypt сначала приводит операнды к логическому типу, а затем возвращает противоположное значение.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT"
     },
     {
       "number" : "73",
-      "question" : "Расположить логические операторы || (логическое или), ! (логическое не), && (логические и) по убыванию приоритета (от большего к меньшему) в JavaScrypt.",
+      "question" : "Расположить логические операторы <i>||</i> (логическое или), <i>!</i> (логическое не), <i>&&</i> (логические и) по убыванию приоритета (от большего к меньшему) в JavaScrypt.",
       "explanation": "Наивысший приоритет имеет ! (логическое не), затем идет && (логические и), а на последнем месте || (логическое или)",
       "link": ""
     },
     {
       "number" : "74",
-      "question" : "Чем можно заменить специальную функцию Boolean() в JavaScrypt?",
+      "question" : "Чем можно заменить специальную функцию <i>Boolean()</i> в JavaScrypt?",
       "explanation": "Аналог функции Boolean() два !! (логические операторы не)",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Logical_NOT"
     },
     {
       "number" : "75",
-      "question" : "Для чего используются два подряд опертора !! (логические не) в JavaScrypt?",
+      "question" : "Для чего используются два подряд опертора <i>!!</i> (логические не) в JavaScrypt?",
       "explanation": "Аналог функции Boolean() два !! (логические операторы не). Они преобразовывают операнд в булев тип",
       "link": ""
     },
     {
       "number" : "76",
-      "question" : "Что возвращает оператор сравнения с null, каким символом обозначается в JavaScrypt?",
+      "question" : "Что возвращает оператор сравнения с <i>null</i>, каким символом обозначается в JavaScrypt?",
       "explanation": "Оператор сравнения с null (нулевого слияния) записывается, как ?? и возвращает первый аргумент, если он не null и не undefined, иначе второй.",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Nullish_coalescing"
     },
     {
       "number" : "77",
-      "question" : "В каких случаях произвольный код выполнится в JavaScrypt? <p>if (...) {</p><p>'Произвольный код'</p><p>}</p>",
+      "question" : "В каких случаях произвольный код выполнится в JavaScrypt? <img src='assets/img/questions/juniorJsQuestions/77.jpg'>",
       "explanation": "Произвольный код выполнится, если в скобках будет true, так как все, что туда помещено, преобразовывается в булев тип",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else"
     },
     {
       "number" : "78",
-      "question" : "Как сократить в JavaScrypt запись <p>if (2 > 1) {</p><p>console.log('message')</p><p>}</p>",
-      "explanation": "if (2 > 1) console.log('message'); Так сократить пример можно, если выполняемая инструкция записана в одну строку",
+      "question" : "Как сократить в JavaScrypt запись <img src='assets/img/questions/juniorJsQuestions/78.jpg'>",
+      "explanation": "<i>if (2 > 1) console.log('message');</i> Так сократить пример можно, если выполняемая инструкция записана в одну строку",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else"
     },
     {
       "number" : "79",
-      "question" : "Как сократить в JavaScrypt запись <p>if (2 > 1) {</p><p>console.log('message')</p><p>} else {</p><p>console.log('Оля')</p><p>}</p>",
-      "explanation": "2 > 1 ? console.log('Вася') : console.log('Оля'); Так сократить пример можно при помощи тренарного оператора ?",
+      "question" : "Как сократить в JavaScrypt запись <img src='assets/img/questions/juniorJsQuestions/79.jpg'>",
+      "explanation": "<i>2 > 1 ? console.log('Вася') : console.log('Оля');</i> Так сократить пример можно при помощи тренарного оператора ?",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Conditional_operator"
     },
     {
@@ -482,13 +482,13 @@
     },
     {
       "number" : "81",
-      "question" : "Как записать следующее выражение при помощи тернарного оператора '?' в JavaScrypt? <p>const firstCheck = false;</p><p>const secondCheck = false;</p><p>let access;</p><p>if (firstCheck) {</p><p> access = 'Доступ запрещён';</p><p>} else if (secondCheck) {</p><p>  access = 'Доступ запрещён';</p><p>} else {</p><p>access = 'Доступ разрешён';</p><p>}</p>",
-      "explanation": "<p>const firstCheck = false;</p><p>const secondCheck = false;</p><p>let access = firstCheck</p><p>? 'Доступ запрещён'</p><p>: secondCheck</p><p>? 'Доступ запрещён'</p><p>: 'Доступ разрешён';</p>",
+      "question" : "Как записать следующее выражение при помощи тернарного оператора '?' в JavaScrypt?<img src='assets/img/questions/juniorJsQuestions/81.jpg'>",
+      "explanation": "<img src='assets/img/questions/juniorJsQuestions/81_1.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Conditional_operator"
     },
     {
       "number" : "82",
-      "question" : "Синтаксис цикла while в JavaScrypt. Как парвильно записать?",
+      "question" : "Синтаксис цикла <i>while</i> в JavaScrypt. Как парвильно записать?",
       "explanation": "<img src='assets/img/questions/juniorJsQuestions/82.jpg'><img src='assets/img/questions/juniorJsQuestions/82_1.jpg'>",
       "link": ""
     },
@@ -500,7 +500,7 @@
     },
     {
       "number" : "84",
-      "question" : "Как правильно записывается конструкция do...while в JavaScrypt? В чем его отличие от цикла while?",
+      "question" : "Как правильно записывается конструкция <i>do...while</i> в JavaScrypt? В чем его отличие от цикла <i>while</i>?",
       "explanation": "Конструкция do...while используется тогда, когда нам необходимо выполнение тела цикла хотя бы 1 раз, независимо от того, вернет условия true или нет. <img src='assets/img/questions/juniorJsQuestions/84.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration#цикл_do...while"
     },
@@ -518,7 +518,7 @@
     },
     {
       "number" : "87",
-      "question" : "Какой синтаксис цикла for в JavaScrypt?",
+      "question" : "Какой синтаксис цикла <i>for</i> в JavaScrypt?",
       "explanation": "<img src='assets/img/questions/juniorJsQuestions/87.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Loops_and_iteration"
     },

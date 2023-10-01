@@ -42,7 +42,7 @@ testBlockNextBtn.addEventListener('click', () => {
     currentQuestion += 1;
     answeredQuizBlock.innerHTML = currentQuestion;
     //Обнуление описания ответа и пояснения к нему в виде ссылки
-    testBlockResultsDescr.innerText = '';
+    testBlockResultsDescr.innerHTML = '';
     testBlockResultsLink.innerHTML = '';
   } else {
     testBlockNextBtn.disabled = true;
@@ -106,7 +106,7 @@ function checkValidResultTest(questionFile, questionNumber, questionsArrey) {
       }
 
       //Публикация описания ответа
-      testBlockResultsDescr.innerText = questionFile[questionNumber]["explanation"];
+      testBlockResultsDescr.innerHTML = questionFile[questionNumber]["explanation"];
       //Публикация ссылки к ответу
       testBlockResultsLink.innerHTML = `<a href="${questionFile[questionNumber]["link"]}" target="_blank">Читать подробнее</a>`;
 
