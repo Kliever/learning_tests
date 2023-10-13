@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Тестирование</title>
+  <link rel="stylesheet" href="assets/css/style.css?_v=20231009170818">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+  <div class="container">
+    <div class="header__top">
+      <h1 class="header__title main-title">Вопросы и тесты</h1>
+      <p class="header__descr">Задания для собеседований</p>
+      <button type="button" class="header__back-btn switch-btn">К выбору категорий</button>
+    </div>
+  </div>
+</header>
+    <main class="main">
+      <div class="container">
+        <div class="main__inner">
+          <div class="main__block main-block">
+
+            <div class="start-block _active">
+              <h2 class="start-block__title questions">Выберите один из типов доступных заданий</h2>
+              <div class="start-block__btns js-radio-type js-types-of-tasks">
+                <button type="button"
+                  class="start-block__btn switch-btn js-radio-type__btn js-types-of-tasks__item _active"
+                  data-type="quiz">Тестирование</button>
+                <button type="button" class="start-block__btn switch-btn js-radio-type__btn js-types-of-tasks__item"
+                  data-type="questions">Вопросы</button>
+              </div>
+              <h2 class="start-block__title questions">Выберите один или несколько разделов</h2>
+              <div class="start-block__btns js-switch-btns js-types-of-questions">
+                <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item"
+                  data-type="juniorJs">Junior JS</button>
+                <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item"
+                  data-type="HTML">HTML</button>
+                <button type="button" class="start-block__btn switch-btn js-switch-btn js-types-of-questions__item"
+                  data-type="CSS">CSS</button>
+              </div>
+              <button type="button" class="start-block__start-btn">Начать</button>
+            </div>
+
+            <div class="quiz-block">
+              <div class="quiz-block__inner">
+                <h2 class="quiz-block__question question">
+
+                </h2>
+                <div class="quiz-block__body">
+                  <div class="quiz-block__answers">
+                    <div class="quiz-block__answer quiz-answer">
+
+                    </div>
+                    <div class="quiz-block__next-btns">
+                      <button type="button" class="quiz-block__next-btn btn">Следующий вопрос</button>
+                      <button type="button" class="quiz-block__reload-btn btn">Пройти тест заново</button>
+                    </div>
+                  </div>
+                  <div class="quiz-block__info">
+                    <div class="quiz-block__info-questions">
+                      Вопрос
+                      <span class="quiz-block__info-questions-answered info-questions-answered"></span>
+                      из
+                      <span class="quiz-block__info-questions-total info-questions-total"></span>
+                    </div>
+                    <div class="quiz-block__info-correct-answer">
+                      Правильных ответов:
+                      <span class="quiz-block__info-correct-answer-count"></span>
+                    </div>
+                    <div class="quiz-block__info-incorrect-answer">
+                      Неправильных ответов:
+                      <span class="quiz-block__info-incorrect-answer-count"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="quiz-block__results-descr results-descr">
+
+                </div>
+                <div class="quiz-block__results-link result-link">
+
+                </div>
+              </div>
+
+            </div>
+
+            <div class="questions-block">
+              <div class="questions-block__inner">
+                <div class="questions-block__info">
+                  <div class="questions-block__info-questions">
+                    Вопрос
+                    <span class="questions-block__info-questions-answered info-questions-answered"></span>
+                    из
+                    <span class="questions-block__info-questions-total info-questions-total"></span>
+                  </div>
+                </div>
+                <h2 class="questions-block__question question">
+
+                </h2>
+                <div class="questions-block__body">
+                  <div class="questions-block__answers">
+                    <div class="questions-block__next-btns">
+                      <button type="button" class="questions-block__answer-btn btn">Посмотреть ответ</button>
+                      <button type="button" class="questions-block__next-btn btn">Следующий вопрос</button>
+                      <button type="button" class="questions-block__reload-btn btn">Пройти тест заново</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="questions-block__results-descr results-descr">
+
+                </div>
+                <div class="questions-block__results-link result-link">
+
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <div class="loading _visible">
+      <span class="loading__text">Загрузка</span>
+      <span class="loading__first-dot ">.</span>
+      <span class="loading__second-dot">.</span>
+      <span class="loading__third-dot">.</span>
+    </div>
+    <footer class="footer">
+  <img src='assets/img/questions/juniorJsQuestions/.jpg'>
+  <img src='assets/img/questions/juniorJsQuiz/.jpg'>
+  <a href=""></a>
+</footer>
+  </div>
+
+  <script src="assets/js/main.js?_v=20231009170818"></script>
+</body>
+
+</html>

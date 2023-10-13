@@ -58,6 +58,16 @@ headerBackBtn.addEventListener('click', () => {
   taskArrey.length = 0;
   questionsFiles.length = 0;
   typesOfQuestions.length = 0;
+  //обнуление состояния ответов
+  testBlockResultsDescr.innerHTML = '';
+  testBlockResultsLink.innerHTML = '';
+  questionsResultDescr.innerHTML = '';
+  questionsResultLink.innerHTML = '';
+  //обнулениесостояния кнопок
+  testBlockNextBtn.disabled = true;
+  resultQuestionsBtn.disabled = false;
+  questionsNextBtn.disabled = true;
+  questionsReloadBtn.classList.remove('_visible');
 })
 
 //Функция определения, какой тип задания выбран (тестирование или вопросы)

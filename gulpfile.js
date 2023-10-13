@@ -274,12 +274,12 @@ function imagesBuild() {
         message: "Error: <%= error.message %>"
       })
     ))
-    .pipe(webp())
-    .pipe(dest(path.build.images))
-    .pipe(src(path.src.images, {
-      base: `${srcPath}/assets/img/`,
-      sourcemaps: true,
-    }))
+    // .pipe(webp())
+    // .pipe(dest(path.build.images))
+    // .pipe(src(path.src.images, {
+    //   base: `${srcPath}/assets/img/`,
+    //   sourcemaps: true,
+    // }))
     .pipe(imagemin([
       imagemin.gifsicle({ interlaced: true }),
       imagemin.mozjpeg({ quality: 75, progressive: true }),
