@@ -339,7 +339,7 @@
     {
       "number" : "57",
       "question" : "Объяснить правила сравнения строк в JavaScript",
-      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство, сравниваются регистры букв, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false). <img src='assets/img/questions/juniorJsQuestions/57.jpg'><img src='assets/img/questions/juniorJsQuestions/57_1.jpg'>",
+      "explanation": "Сравнение строк в JavaScrypt происходит посимвольно в алфавитном порядке. Чем дальше буква от начала алфавита, тем она имеет большее значение, например, ('Б' > 'А' даст true). Такой же принцип сохраняется и для слов ('Скрипт' > 'Скрипка' даст true, потому что 'т' > 'к'). Еслибуквы равны, сравниваются их регистры, при этом в таблице символов unicode, которую использет JavaScrypt, маленькие буквы имею Больший вес, чем большие ('Слайдер' > 'слайдер' даст false). Если при всех прочих равных количество символов в словах разное, больше будет слово с бОльшим количеством символов ('Слайдер' > 'Слайд' даст true). Если и в этом случае получается равенство. <img src='assets/img/questions/juniorJsQuestions/57.jpg'><img src='assets/img/questions/juniorJsQuestions/57_1.jpg'>",
       "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_operators#операторы_сравнения"
     },
     {
@@ -1214,102 +1214,270 @@
     },
     {
       "number" : "203",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript вывести в консоль многострочную запись. <img src='assets/img/questions/juniorJsQuestions/203.jpg'>",
+      "explanation": "Использовать обратные кавычки либо спецсимвол <i>\/n</i> <img src='assets/img/questions/juniorJsQuestions/203_1.jpg'>",
       "link": ""
     },
     {
       "number" : "204",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript выглядит специальный символ табуляции?",
+      "explanation": "<i>/\t</i>",
       "link": ""
     },
     {
       "number" : "205",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript выглядит символ экранирования?",
+      "explanation": "<i>\\</i>",
       "link": ""
     },
     {
       "number" : "206",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript экранировать символ экранирования (вывести его)?",
+      "explanation": "Использовать обратный слеш для экранирования символа экранирования <i>\\\\</i>",
       "link": ""
     },
     {
       "number" : "207",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript экранировать кавычки в примере <img src='assets/img/questions/juniorJsQuestions/207.jpg'>",
+      "explanation": "Использовать символ экранирования <i>\\</i> <img src='assets/img/questions/juniorJsQuestions/207_1.jpg'>",
       "link": ""
     },
     {
       "number" : "208",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Как в JavaScript определить длину какой-либо строки, например, <i>'Программирование'</i>?",
+      "explanation": "Присвоить строку переменной, а затем использовать свойство <i>length</i> <img src='assets/img/questions/juniorJsQuestions/208.jpg'>",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length"
     },
     {
       "number" : "209",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript вывести в консоль третий символ какой-либо строки, например, <i>'Программирование'</i>?",
+      "explanation": "<img src='assets/img/questions/juniorJsQuestions/209.jpg'>",
       "link": ""
     },
     {
       "number" : "210",
-      "question": "",
-      "explanation": "",
+      "question": "Как в JavaScript вывести в консоль последний символ какой-либо строки, например, <i>'Программирование'</i>?",
+      "explanation": "<img src='assets/img/questions/juniorJsQuestions/210.jpg'>",
       "link": ""
     },
     {
       "number" : "211",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Как в JavaScript вывести в консоль каждый символ какой-либо строки, например, <i>'Программирование'</i>?",
+      "explanation": "Использовать цикл <i>for...of</i> <img src='assets/img/questions/juniorJsQuestions/211.jpg'>",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of"
     },
     {
       "number" : "212",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Как в JavaScript вывести в консоль какую либо строку, например, <i>'Программирование'</i>, преобразовав все ее символы в нижний регистр?",
+      "explanation": "Использовать метод <i>toLowerCase()</i> <img src='assets/img/questions/juniorJsQuestions/212.jpg'>",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase"
     },
     {
       "number" : "213",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Как в JavaScript вывести в консоль какую либо строку, например, <i>'Программирование'</i>, преобразовав все ее символы в верхний регистр?",
+      "explanation": "Использовать метод <i>toUpperCase()</i> <img src='assets/img/questions/juniorJsQuestions/212.jpg'>",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase"
     },
     {
       "number" : "214",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Для чего в JavaScript используется метод <i>indexOf()</i>? Особенности его использования",
+      "explanation": "Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. В параметрах можно указать саму подстроку, которую необходимо найти, а также индекс, с которого начинать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
     },
     {
       "number" : "215",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Как в JavaScript в какой либо строке найти определенноую подстроку или символ, например, определить, есть ли в строке <i>'Программирование'</i> подстрока <i>'грамм'</i> и вернуть номер символа, с которого начинается совпадение? В чем особенность такого поиска?",
+      "explanation": "Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. В параметрах можно указать саму подстроку, которую необходимо найти, а также индекс, с которого начинать поиск. По такому же принципу происходит работа с массивами <img src='assets/img/questions/juniorJsQuestions/215.jpg'>",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
     },
     {
       "number" : "216",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/216.jpg'>",
+      "explanation": "<i>3</i>, так как єто индекс символа, с которого начинается подстрока. Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. В параметрах можно указать саму подстроку, которую необходимо найти, а также индекс, с которого начинать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
     },
     {
       "number" : "217",
-      "question": "",
-      "explanation": "",
-      "link": ""
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/217.jpg'>",
+      "explanation": "<i>3</i>, так как это индекс символа, с которого начинается подстрока. Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. В параметрах можно указать саму подстроку, которую необходимо найти, а также индекс, с которого начинать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
     },
     {
       "number" : "218",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/218.jpg'>",
+      "explanation": "<i>-1</i>, так как подстрока начиная с символа под номером 4 не будет найдена. Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. В параметрах можно указать саму подстроку, которую необходимо найти, а также индекс, с которого начинать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+    },
+    {
+      "number" : "219",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/219.jpg'>",
+      "explanation": "<i>-1</i>, так как подстрока не будет найдена. Метод indexOf() возвращает первый индекс, по которому данный элемент может быть найден в массиве или -1, если такого индекса нет. В параметрах можно указать саму подстроку, которую необходимо найти, а также индекс, с которого начинать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf"
+    },
+    {
+      "number" : "220",
+      "question": "Для чего в JavaScript используется метод <i>includes()</i>? Особенности его использования",
+      "explanation": "Метод includes() проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false. параметры включают искомую подстроку, а также номер символа, с которого требуется начать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    },
+    {
+      "number" : "221",
+      "question": "Как в JavaScript в какой либо строке найти определенноую подстроку или символ, например, определить, есть ли в строке <i>'Программирование'</i> подстрока <i>'грамм'</i> и вернуть <i>true</i> или <i>false</i>? В чем особенность такого поиска?",
+      "explanation": "Метод includes() проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false. параметры включают искомую подстроку, а также номер символа, с которого требуется начать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    },
+    {
+      "number" : "222",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/222.jpg'>",
+      "explanation": "<i>true</i>, так как заданной строке есть указанная подстрока. Метод includes() проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false. параметры включают искомую подстроку, а также номер символа, с которого требуется начать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    },
+    {
+      "number" : "223",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/223.jpg'>",
+      "explanation": "<i>true</i>, так как в заданной строке начиная с символа под номером 3 есть указанная подстрока. Метод includes() проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false. параметры включают искомую подстроку, а также номер символа, с которого требуется начать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    },
+    {
+      "number" : "224",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/224.jpg'>",
+      "explanation": "<i>false</i>, так как в заданной строке начиная с символа под номером 4 нет указанной подстроки. Метод includes() проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false. параметры включают искомую подстроку, а также номер символа, с которого требуется начать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    },
+    {
+      "number" : "225",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/225.jpg'>",
+      "explanation": "<i>false</i>, так как в заданной строке нет указанной подстроки. Метод includes() проверяет, содержит ли строка заданную подстроку, и возвращает, соответственно true или false. параметры включают искомую подстроку, а также номер символа, с которого требуется начать поиск. По такому же принципу происходит работа с массивами",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes"
+    },
+    {
+      "number" : "226",
+      "question": "Какой метод используются в JavaScript для поиска подстроки в начале строки? В чем особенность его применения?",
+      "explanation": "Метод <i>startsWith()</i> помогает определить, начинается ли строка с символов указанных в скобках, возвращая, соответственно, <i>true</i> или <i>false</i>.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"
+    },
+    {
+      "number" : "227",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/227.jpg'>",
+      "explanation": "<i>true</i>, так как строка начинается с указанной подстроки. Метод startsWith() помогает определить, начинается ли строка с символов указанных в скобках, возвращая, соответственно, true или false.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"
+    },
+    {
+      "number" : "228",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/228.jpg'>",
+      "explanation": "<i>false</i>, так как первые символы строки и подстроки не совпадают. Метод startsWith() помогает определить, начинается ли строка с символов указанных в скобках, возвращая, соответственно, true или false.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"
+    },
+    {
+      "number" : "229",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/229.jpg'>",
+      "explanation": "<i>true</i>, так как подстрока есть в данной строке и начинается с указанного места. Метод startsWith() помогает определить, начинается ли строка с символов указанных в скобках, возвращая, соответственно, true или false.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/startsWith"
+    },
+    {
+      "number" : "230",
+      "question": "Какой метод используются в JavaScript для поиска подстроки в конце строки? В чем особенность его применения?",
+      "explanation": "Метод <i>endsWith()</i> позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соответственно, <i>true<i/> или <i>false</i>. В качестве параметров принимает подстроку, а также необязательный параметр <i>length</i>, позволяющий искать внутри строки, обрезая её по диапазону",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+    },
+    {
+      "number" : "231",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/231.jpg'>",
+      "explanation": "<i>true</i>, так как строка заканчивается указанной подстрокой. Метод <i>endsWith()</i> позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соответственно, <i>true<i/> или <i>false</i>. В качестве параметров принимает подстроку, а также необязательный параметр <i>length</i>, позволяющий искать внутри строки, обрезая её по диапазону",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+    },
+    {
+      "number" : "232",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/232.jpg'>",
+      "explanation": "<i>true</i>, так как строка обрезается по заданной длине и заканчивается указанной подстрокой. Метод <i>endsWith()</i> позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соответственно, <i>true<i/> или <i>false</i>. В качестве параметров принимает подстроку, а также необязательный параметр <i>length</i>, позволяющий искать внутри строки, обрезая её по диапазону",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+    },
+    {
+      "number" : "233",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/233.jpg'>",
+      "explanation": "<i>false</i>, так как строка обрезается по заданной длине, но не заканчивается указанной подстрокой. Метод <i>endsWith()</i> позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соответственно, <i>true<i/> или <i>false</i>. В качестве параметров принимает подстроку, а также необязательный параметр <i>length</i>, позволяющий искать внутри строки, обрезая её по диапазону",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+    },
+    {
+      "number" : "234",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/234.jpg'>",
+      "explanation": "<i>false</i>, так как строка не заканчивается указанной подстрокой. Метод <i>endsWith()</i> позволяет определить, заканчивается ли строка символами указанными в скобках, возвращая, соответственно, <i>true<i/> или <i>false</i>. В качестве параметров принимает подстроку, а также необязательный параметр <i>length</i>, позволяющий искать внутри строки, обрезая её по диапазону",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith"
+    },
+    {
+      "number" : "235",
+      "question": "Для чего в JavaScript используется метод <i>slice()</i>?",
+      "explanation": "Метод slice() извлекает часть строки и возвращает новую строку без изменения оригинальной строки. Аналогично работает и с массивами. первым аргументом указывается начальная позиция подстроки включительно, вторым - конечная не включительно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+    },
+    {
+      "number" : "236",
+      "question": "Какой метод можно использовать для излечения подстроки из какой-либо строки в JavaScript?",
+      "explanation": "Метод slice() извлекает часть строки и возвращает новую строку без изменения оригинальной строки. Аналогично работает и с массивами. первым аргументом указывается начальная позиция подстроки включительно, вторым - конечная не включительно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+    },
+    {
+      "number" : "237",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/237.jpg'>",
+      "explanation": "'Про', так как первый символ имеет позицию 0, а последний 2 (3 не включительно). Метод slice() извлекает часть строки и возвращает новую строку без изменения оригинальной строки. Аналогично работает и с массивами. первым аргументом указывается начальная позиция подстроки включительно, вторым - конечная не включительно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+    },
+    {
+      "number" : "238",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/238.jpg'>",
+      "explanation": "'гр', так как первый символ имеет позицию 3, а последний 4 (5 не включительно). Метод slice() извлекает часть строки и возвращает новую строку без изменения оригинальной строки. Аналогично работает и с массивами. первым аргументом указывается начальная позиция подстроки включительно, вторым - конечная не включительно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+    },
+    {
+      "number" : "239",
+      "question": "Что будет выведено в консоль JavaScript в результате выполнения следующего кода? <img src='assets/img/questions/juniorJsQuestions/239.jpg'>",
+      "explanation": "'ни', так как первый символ имеет позицию -3 (3 с конца), а последний -1 (1 с конца не включительно). Метод slice() извлекает часть строки и возвращает новую строку без изменения оригинальной строки. Аналогично работает и с массивами. первым аргументом указывается начальная позиция подстроки включительно, вторым - конечная не включительно.",
+      "link": "https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice"
+    },
+    {
+      "number" : "240",
       "question": "",
       "explanation": "",
       "link": ""
     },
     {
-      "number" : "219",
+      "number" : "241",
+      "question": "",
+      "explanation": "",
+      "link": ""
+    },
+    {
+      "number" : "242",
+      "question": "",
+      "explanation": "",
+      "link": ""
+    },
+    {
+      "number" : "243",
+      "question": "",
+      "explanation": "",
+      "link": ""
+    },
+    {
+      "number" : "244",
+      "question": "",
+      "explanation": "",
+      "link": ""
+    },
+    {
+      "number" : "245",
+      "question": "",
+      "explanation": "",
+      "link": ""
+    },
+    {
+      "number" : "246",
+      "question": "",
+      "explanation": "",
+      "link": ""
+    },
+    {
+      "number" : "247",
       "question": "",
       "explanation": "",
       "link": ""
